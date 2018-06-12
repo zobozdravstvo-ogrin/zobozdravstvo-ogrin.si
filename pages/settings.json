@@ -1,0 +1,45 @@
+{
+  "site_title": "Zasebna zobna ordinacija M. Ogrin",
+  "short_title": "Zobozdravstvo Ogrin",
+  "site_author": "MARIJA OGRIN - STOMATOLOGINJA",
+  "site_author_url": "https://zobozdravstvo-ogrin.si",
+  "email": "",
+  "tel": "(+386) 01 750 24 92",
+  "header": {
+    "links": [
+      {
+        "name": "Storitve",
+        "link": "/storitve"
+      },
+      {
+        "name": "Ordinacija",
+        "link": "/ordinacija"
+      },
+      {
+        "name": "Naročanje",
+        "link": "/narocanje"
+      },
+      {
+        "name": "Kontakt",
+        "link": "/kontakt"
+      }
+    ]
+  },
+  "footer": {
+    "copy": "(c) zobozdravstvo-ogrin.si",
+    "links": [
+      {
+        "name": "Ordinacija",
+        "link": "/ordinacija"
+      },
+      {
+        "name": "Naročanje",
+        "link": "/narocanje"
+      },
+      {
+        "name": "Kontakt",
+        "link": "/kontakt"
+      }
+    ]
+  }
+}

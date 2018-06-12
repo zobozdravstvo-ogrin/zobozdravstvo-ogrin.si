@@ -1,0 +1,54 @@
+@import "variables";
+@import "~grommet/scss/grommet-core/index";
+
+// "overscroll fix"
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+
+.app-logo {
+  display: flex;
+}
+
+.app-footer,
+.app-header {
+  background: white;
+}
+
+.app-header {
+  @include media-query(palm) {
+    .grommetux-title {
+      display: none;
+      width: 160px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.app-footer {
+  .footer-container {
+    @include media-query(palm) {
+      align-items: center !important;
+    }
+  }
+}
+
+.content-container > div {
+  @include media-query(lap-and-up) {
+    min-width: 960px;
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 840px) {
+    min-width: 750px;
+  }
+}
+

@@ -1,0 +1,144 @@
+# https://www.netlifycms.org/docs/widgets/#select
+backend:
+  name: github
+  repo: zobozdravstvo-ogrin/zobozdravstvo-ogrin.si
+  branch: master
+  base_url: https://github.zobozdravstvo-ogrin.si
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+# publish_mode: editorial_workflow
+media_folder: "pages/images/uploads"
+public_folder: "images/uploads"
+
+collections:
+  - name: "authors"
+    label: "Authors"
+    folder: "pages/author"
+    description: "Author descriptions"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "author-page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Image", name: "author_image", widget: "image"}
+      - {label: "Cover Image", name: "author_cover_image", widget: "image", required: false}
+
+  - name: "english_stories"
+    label: "English story"
+    folder: "pages/stories"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    filter: {field: "language", value: "en"}
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "story-page"}
+      - {label: "Language", name: "language", widget: "select", options: [{ label: "English", value: "en" }, { label: "Slovenščina", value: "sl" }], default: "en"}
+      - label: "Post Author"
+        name: "author"
+        widget: "relation"
+        collection: "authors"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sub title", name: "sub_title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+      - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
+      - label: "Gallery"
+        name: galleryImages
+        widget: "list"
+        fields:
+          - {label: "Image", name: "image", widget: "image"}
+
+  - name: "slovenian_stories"
+    label: "Slovenske zgodbe"
+    folder: "pages/stories"
+    create: true
+    filter: {field: "language", value: "sl"}
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "story-page"}
+      - {label: "Jezik", name: "language", widget: "select", options: [{ label: "English", value: "en" }, { label: "Slovenščina", value: "sl" }], default: "sl"}
+      - label: "Avtor objave"
+        name: "author"
+        widget: "relation"
+        collection: "authors"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
+      - {label: "Naslov", name: "title", widget: "string"}
+      - {label: "Pod naslov", name: "sub_title", widget: "string"}
+      - {label: "Opis", name: "description", widget: "text"}
+      - {label: "Vsebina", name: "body", widget: "markdown"}
+      - {label: "Datum objave", name: "date", widget: "datetime"}
+      - {label: "Objavljeno", name: "published", widget: "boolean", default: true}
+      - {label: "Naslovna fotografija", name: "image", widget: "image", required: false}
+      - label: "Galerija"
+        name: "galleryImages"
+        required: false
+        widget: "list"
+        fields:
+          - {label: "Image", name: "image", widget: "image"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "about"
+        label: "About Page"
+        description: "Site about page"
+        file: "pages/about.md"
+        extension: "md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Cover Image", name: "image", widget: "image", required: false}
+          - label: "Team"
+            name: team
+            widget: "list"
+            fields:
+              - {label: "Name", name: name, widget: string}
+              - {label: "Position", name: position, widget: string}
+              - {label: "Photo", name: photo, widget: image, required: false}
+
+  - name: "settings"
+    label: "Settings"
+    delete: false
+    files:
+      - name: "general"
+        label: "Site Settings"
+        file: "pages/settings.json"
+        description: "General Site Settings"
+        editor:
+          preview: false
+        fields:
+          - {label: "Site title", name: "site_title", widget: "string"}
+          - {label: "Site author", name: "site_author", widget: "string"}
+          - {label: "Site author url", name: "site_author_url", widget: "string"}
+          - label: "Post Settings"
+            name: posts
+            widget: "object"
+            fields:
+              - {label: "Number of posts on frontpage", name: front_limit, widget: number}
+          - label: "Header navigation"
+            name: "header_navigation"
+            widget: "object"
+            fields:
+              - label: "Navigation links"
+                name: "navigation_links"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Link", name: "link", widget: "string"}
+          - label: "Footer Settings"
+            name: footer
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
