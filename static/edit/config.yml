@@ -22,9 +22,9 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "author-page"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Content", name: "body", widget: "markdown"}
-      - {label: "Image", name: "author_image", widget: "image"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Content", name: "body", widget: "markdown", required: false}
+      - {label: "Image", name: "author_image", widget: "image", required: false}
       - {label: "Cover Image", name: "author_cover_image", widget: "image", required: false}
 
   - name: "clanki"
