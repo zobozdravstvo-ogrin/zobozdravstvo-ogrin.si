@@ -60,13 +60,24 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - name: "about"
-        label: "About Page"
-        description: "Site about page"
-        file: "pages/about.md"
+      - name: "index"
+        label: "Začetna stran"
+        description: "Začetna stran"
+        file: "pages/index.md"
         extension: "md"
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "about-page"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "homepage"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Cover Image", name: "image", widget: "image", required: false}
+      - name: "ordinacija"
+        label: "Kdo smo"
+        description: "Kdo smo"
+        file: "pages/ordinacija.md"
+        extension: "md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "about"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Content", name: "body", widget: "markdown"}
