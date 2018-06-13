@@ -27,40 +27,12 @@ collections:
       - {label: "Image", name: "author_image", widget: "image"}
       - {label: "Cover Image", name: "author_cover_image", widget: "image", required: false}
 
-  - name: "english_stories"
-    label: "English story"
-    folder: "pages/stories"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    filter: {field: "language", value: "en"}
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "story-page"}
-      - {label: "Language", name: "language", widget: "select", options: [{ label: "English", value: "en" }, { label: "Slovenščina", value: "sl" }], default: "en"}
-      - label: "Post Author"
-        name: "author"
-        widget: "relation"
-        collection: "authors"
-        searchFields: ["title"]
-        valueField: "title"
-        displayFields: ["title"]
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Sub title", name: "sub_title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Content", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Published", name: "published", widget: "boolean", default: true}
-      - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
-      - label: "Gallery"
-        name: galleryImages
-        widget: "list"
-        fields:
-          - {label: "Image", name: "image", widget: "image"}
-
-  - name: "slovenian_stories"
-    label: "Slovenske zgodbe"
-    folder: "pages/stories"
+  - name: "clanki"
+    label: "Clanki"
+    folder: "pages/clanki"
     create: true
     filter: {field: "language", value: "sl"}
+    slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "story-page"}
       - {label: "Jezik", name: "language", widget: "select", options: [{ label: "English", value: "en" }, { label: "Slovenščina", value: "sl" }], default: "sl"}
