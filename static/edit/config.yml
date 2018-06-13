@@ -145,7 +145,7 @@ collections:
             fields:
               - {label: "Headline", name: "headline", widget: "string"}
               - {label: "Body", name: "body", widget: "text"}
-              - {label: "Copy", name: "copy", widget: "string"},
+              - {label: "Copy", name: "copy", widget: "string"}
               - label: "Links"
                 name: "links"
                 widget: "list"
