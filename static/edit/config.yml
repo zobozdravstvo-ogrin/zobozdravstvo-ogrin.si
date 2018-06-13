@@ -122,6 +122,7 @@ collections:
           - {label: "Description", name: "description", widget: "text"}
           - label: "PrependJS"
             name: "prependJs"
+            allow_add: true
             widget: "list"
           - {label: "Content", name: "body", widget: "markdown"}
           - {label: "Cover Image", name: "image", widget: "image", required: false}
