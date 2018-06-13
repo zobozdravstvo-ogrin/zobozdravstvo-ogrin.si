@@ -78,6 +78,44 @@ collections:
               - {label: "Name", name: name, widget: string}
               - {label: "Position", name: position, widget: string}
               - {label: "Photo", name: photo, widget: image, required: false}
+      - name: "storitve"
+        label: "Storitve"
+        description: "Informacije o storitvah"
+        file: "pages/storitve.md"
+        extension: "md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "services"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Cover Image", name: "image", widget: "image", required: false}
+      - name: "narocanje"
+        label: "Naročanje"
+        description: "Informacije o naročanju"
+        file: "pages/narocanje.md"
+        extension: "md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "order"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Cover Image", name: "image", widget: "image", required: false}
+      - name: "kontakt"
+        label: "Kontakt"
+        description: "Kontakt in lokacija"
+        file: "pages/kontakt.md"
+        extension: "md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "contact"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "PrependJS"
+            name: "prependJs"
+            widget: "list"
+            fields:
+              - {label: "Item", name: "item", widget: "string"}
+          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Cover Image", name: "image", widget: "image", required: false}
 
   - name: "settings"
     label: "Settings"
