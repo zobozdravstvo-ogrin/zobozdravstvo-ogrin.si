@@ -2,8 +2,6 @@
 layout: contact
 title: Kontakt
 description: Kontakt in lokacija
-prependJs:
-  - "import Iframe from 'react-iframe';"
 ---
 
 ## Kontakt
@@ -19,6 +17,8 @@ Pod Hruševco 33\
 Naziv: OGRIN MARIJA - STOMATOLOGINJA\
 Davčna št.: 24647764\
 Matična št.: 1376527000\
+
+test
 
 {{
 
