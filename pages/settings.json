@@ -5,6 +5,9 @@
   "site_author_url": "https://zobozdravstvo-ogrin.si",
   "email": "",
   "tel": "(+386) 01 750 24 92",
+  "posts": {
+    "front_limit": 6
+  },
   "header": {
     "links": [
       {

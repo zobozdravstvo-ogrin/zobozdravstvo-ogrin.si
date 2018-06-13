@@ -119,26 +119,36 @@ collections:
           preview: false
         fields:
           - {label: "Site title", name: "site_title", widget: "string"}
+          - {label: "Short title", name: "short_title", widget: "string"}
           - {label: "Site author", name: "site_author", widget: "string"}
           - {label: "Site author url", name: "site_author_url", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Telephone", name: "tel", widget: "string"}
           - label: "Post Settings"
             name: posts
             widget: "object"
             fields:
               - {label: "Number of posts on frontpage", name: front_limit, widget: number}
-          - label: "Header navigation"
-            name: "header_navigation"
+          - label: "Header"
+            name: "header"
             widget: "object"
             fields:
-              - label: "Navigation links"
-                name: "navigation_links"
+              - label: "Links"
+                name: "links"
                 widget: "list"
                 fields:
                   - {label: "Name", name: "name", widget: "string"}
                   - {label: "Link", name: "link", widget: "string"}
-          - label: "Footer Settings"
+          - label: "Footer"
             name: footer
             widget: "object"
             fields:
               - {label: "Headline", name: "headline", widget: "string"}
               - {label: "Body", name: "body", widget: "text"}
+              - {label: "Copy", name: "copy", widget: "string"},
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Link", name: "link", widget: "string"}
