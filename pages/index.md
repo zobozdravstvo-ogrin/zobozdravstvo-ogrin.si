@@ -1,4 +1,5 @@
 ---
+layout: homepage
 title: Zobozdravstvo Ogrin
 description: Začetna stran
 ---

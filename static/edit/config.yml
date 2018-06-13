@@ -22,7 +22,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "author-page"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Description", name: "description", widget: "text"}
       - {label: "Content", name: "body", widget: "markdown", required: false}
       - {label: "Image", name: "author_image", widget: "image", required: false}
       - {label: "Cover Image", name: "author_cover_image", widget: "image", required: false}
@@ -34,7 +34,7 @@ collections:
     filter: {field: "language", value: "sl"}
     slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "story-page"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
       - {label: "Jezik", name: "language", widget: "select", options: [{ label: "English", value: "en" }, { label: "Slovenščina", value: "sl" }], default: "sl"}
       - label: "Avtor objave"
         name: "author"
@@ -120,11 +120,6 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden", default: "contact"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
-          - label: "PrependJS"
-            name: "prependJs"
-            widget: "list"
-            fields:
-              - {label: "Item", name: "item", widget: "string"}
           - {label: "Content", name: "body", widget: "markdown"}
           - {label: "Cover Image", name: "image", widget: "image", required: false}
 

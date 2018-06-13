@@ -1,4 +1,5 @@
 ---
+layout: services
 title: Storitve
 description: Opis nudenih storitev
 ---

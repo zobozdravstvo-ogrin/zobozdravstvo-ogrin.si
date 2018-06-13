@@ -1,4 +1,5 @@
 ---
+layout: about
 title: Kdo smo
 description: O nas, kontakt in lokacija
 ---

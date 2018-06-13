@@ -1,4 +1,5 @@
 ---
+layout: contact
 title: Kontakt
 description: Kontakt in lokacija
 prependJs:
