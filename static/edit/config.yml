@@ -120,6 +120,9 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden", default: "contact"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
+          - label: "PrependJS"
+            name: "prependJs"
+            widget: "list"
           - {label: "Content", name: "body", widget: "markdown"}
           - {label: "Cover Image", name: "image", widget: "image", required: false}
 
