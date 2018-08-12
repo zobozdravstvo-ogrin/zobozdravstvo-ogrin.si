@@ -1,27 +1,3 @@
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local("Roboto Light"), local("Roboto-Light"), url("./font/Roboto-Light.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto Regular"), local("Roboto-Regular"), url("./font/Roboto-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("./font/Roboto-Bold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  src: local("Roboto Italic"), local("Roboto-Italic"), url("./font/Roboto-Italic.ttf") format("truetype"); }
-
 /*!
  * inuitcss, by @csswizardry
  *
@@ -480,30 +456,30 @@ ul, ol, dd {
   line-height: 24px; }
   @media screen and (min-width: 45em) {
     .grommet h1:not(.grommetux-heading) {
-      font-size: 48px;
-      font-size: 3rem;
-      line-height: 1.125; } }
+      font-size: 36px;
+      font-size: 2.25rem;
+      line-height: 1.1; } }
   @media screen and (max-width: 44.9375em) {
     .grommet h1:not(.grommetux-heading) {
       font-size: 36px;
       font-size: 2.25rem;
-      line-height: 1.125; } }
+      line-height: 1.1; } }
   @media screen and (min-width: 45em) {
     .grommet h2:not(.grommetux-heading) {
-      font-size: 36px;
-      font-size: 2.25rem;
-      line-height: 1.23; } }
+      font-size: 24px;
+      font-size: 1.5rem;
+      line-height: 1.1; } }
   @media screen and (max-width: 44.9375em) {
     .grommet h2:not(.grommetux-heading) {
-      font-size: 30px;
-      font-size: 1.875rem;
-      line-height: 1.23; } }
+      font-size: 24px;
+      font-size: 1.5rem;
+      line-height: 1.1; } }
   .grommet h3:not(.grommetux-heading) {
-    font-size: 24px;
-    line-height: 1.333; }
-  .grommet h4:not(.grommetux-heading) {
     font-size: 18px;
-    line-height: 1.333; }
+    line-height: 1.1; }
+  .grommet h4:not(.grommetux-heading) {
+    font-size: 16px;
+    line-height: 1.1; }
   .grommet h5:not(.grommetux-heading) {
     font-size: 16px;
     line-height: 1.375; }
@@ -575,7 +551,7 @@ ul, ol, dd {
     margin-bottom: 24px; }
   .grommet b,
   .grommet strong {
-    font-weight: 600; }
+    font-weight: 400; }
   .grommet code {
     font-family: Consolas, Menlo, "DejaVu Sans Mono", "Liberation Mono", monospace; }
   .grommet .large-number-font {
@@ -687,7 +663,7 @@ ul, ol, dd {
     width: 24px;
     overflow: visible;
     margin-top: -11px;
-    border: 2px solid #0a64a0;
+    border: 2px solid #434343;
     border-radius: 24px;
     background-color: #fff;
     cursor: pointer; }
@@ -702,7 +678,7 @@ ul, ol, dd {
     height: 24px;
     width: 24px;
     overflow: visible;
-    border: 2px solid #0a64a0;
+    border: 2px solid #434343;
     height: 20px;
     width: 20px;
     border-radius: 24px;
@@ -716,7 +692,7 @@ ul, ol, dd {
     border-color: transparent;
     color: transparent; }
   .grommet input[type=range]::-ms-fill-lower {
-    background: #0a64a0;
+    background: #434343;
     border-color: transparent; }
   .grommet input[type=range]::-ms-fill-upper {
     background: rgba(51, 51, 51, 0.2);
@@ -772,7 +748,7 @@ ul, ol, dd {
   border: 2px solid #000; }
 
 .grommet .grommetux-background-color-index--light input[type=range]::-ms-fill-lower, .grommet .grommetux-background-color-index--dark .grommetux-background-color-index--light input[type=range]::-ms-fill-lower {
-  background: #0a64a0; }
+  background: #434343; }
 
 .grommet .grommetux-background-color-index--light input[type=range]::-ms-fill-upper, .grommet .grommetux-background-color-index--dark .grommetux-background-color-index--light input[type=range]::-ms-fill-upper {
   background: rgba(51, 51, 51, 0.2); }
@@ -827,7 +803,7 @@ ul, ol, dd {
   transform: rotate(90deg); }
 
 .grommet a:not(.grommetux-anchor):not(.grommetux-button) {
-  color: #0a64a0;
+  color: #777;
   text-decoration: underline;
   cursor: pointer; }
   .grommet a:not(.grommetux-anchor):not(.grommetux-button).plain .grommet a:not(.grommetux-anchor):not(.grommetux-button).grommetux-button {
@@ -835,11 +811,11 @@ ul, ol, dd {
     .grommet a:not(.grommetux-anchor):not(.grommetux-button).plain .grommet a:not(.grommetux-anchor):not(.grommetux-button).grommetux-button:hover {
       text-decoration: none; }
   .grommet a:not(.grommetux-anchor):not(.grommetux-button):visited {
-    color: #0a64a0; }
+    color: #777; }
   .grommet a:not(.grommetux-anchor):not(.grommetux-button).active {
     color: #333; }
   .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover {
-    color: #074975;
+    color: #000001;
     text-decoration: underline; }
   .grommetux-background-color-index--dark .grommet a:not(.grommetux-anchor):not(.grommetux-button), .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet a:not(.grommetux-anchor):not(.grommetux-button) {
     color: rgba(255, 255, 255, 0.85); }
@@ -848,11 +824,11 @@ ul, ol, dd {
     .grommetux-background-color-index--dark .grommet a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--dark .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover {
       color: #fff; }
   .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button), .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button) {
-    color: #0a64a0; }
+    color: #777; }
     .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button):visited {
-      color: #0a64a0; }
+      color: #777; }
     .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover {
-      color: #074975; }
+      color: #000001; }
   .grommetux-background-color-index--pending .grommet a:not(.grommetux-anchor):not(.grommetux-button) {
     color: transparent; }
     .grommetux-background-color-index--pending .grommet a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--pending .grommet a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--pending .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover {
@@ -866,11 +842,11 @@ ul, ol, dd {
     color: #fff; }
 
 .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button), .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button) {
-  color: #0a64a0; }
+  color: #777; }
   .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):visited {
-    color: #0a64a0; }
+    color: #777; }
   .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):hover {
-    color: #074975; }
+    color: #000001; }
 
 .grommetux-background-color-index--pending a:not(.grommetux-anchor):not(.grommetux-button) {
   color: transparent; }
@@ -878,7 +854,7 @@ ul, ol, dd {
     color: transparent; }
 
 .grommetux-anchor {
-  color: #0a64a0;
+  color: #777;
   text-decoration: underline;
   cursor: pointer; }
   .grommetux-anchor.plain .grommetux-anchor.grommetux-button {
@@ -886,11 +862,11 @@ ul, ol, dd {
     .grommetux-anchor.plain .grommetux-anchor.grommetux-button:hover {
       text-decoration: none; }
   .grommetux-anchor:visited {
-    color: #0a64a0; }
+    color: #777; }
   .grommetux-anchor.active {
     color: #333; }
   .grommetux-anchor:hover {
-    color: #074975;
+    color: #000001;
     text-decoration: underline; }
   .grommetux-background-color-index--dark .grommetux-anchor, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor {
     color: rgba(255, 255, 255, 0.85); }
@@ -899,11 +875,11 @@ ul, ol, dd {
     .grommetux-background-color-index--dark .grommetux-anchor.active, .grommetux-background-color-index--dark .grommetux-anchor:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor.active, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor:hover {
       color: #fff; }
   .grommetux-background-color-index--light .grommetux-anchor, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor {
-    color: #0a64a0; }
+    color: #777; }
     .grommetux-background-color-index--light .grommetux-anchor:visited, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor:visited {
-      color: #0a64a0; }
+      color: #777; }
     .grommetux-background-color-index--light .grommetux-anchor.active, .grommetux-background-color-index--light .grommetux-anchor:hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor.active, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor:hover {
-      color: #074975; }
+      color: #000001; }
   .grommetux-background-color-index--pending .grommetux-anchor {
     color: transparent; }
     .grommetux-background-color-index--pending .grommetux-anchor:visited, .grommetux-background-color-index--pending .grommetux-anchor.active, .grommetux-background-color-index--pending .grommetux-anchor:hover {
@@ -956,10 +932,10 @@ ul, ol, dd {
 
 .grommetux-anchor--primary,
 .grommetux-anchor--icon-label {
-  font-size: 19px;
-  font-size: 1.1875rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none; }
   .grommetux-anchor--primary .grommetux-control-icon,
   .grommetux-anchor--icon-label .grommetux-control-icon {
@@ -1068,15 +1044,15 @@ ul, ol, dd {
   .grommetux-anchor--disabled:hover.grommetux-anchor--primary {
     color: #0a64a0; }
   .grommetux-anchor--disabled:hover.grommetux-anchor:not(.grommetux-anchor--primary) {
-    color: #0a64a0; }
+    color: #777; }
   .grommetux-background-color-index--dark .grommetux-anchor--disabled:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor--disabled:hover {
     fill: rgba(255, 255, 255, 0.7);
     stroke: rgba(255, 255, 255, 0.7); }
     .grommetux-background-color-index--dark .grommetux-anchor--disabled:hover.grommetux-anchor--primary, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor--disabled:hover.grommetux-anchor--primary {
       color: rgba(255, 255, 255, 0.7); }
   .grommetux-background-color-index--light .grommetux-anchor--disabled:hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor--disabled:hover {
-    fill: #0a64a0;
-    stroke: #0a64a0; }
+    fill: #777;
+    stroke: #777; }
     .grommetux-background-color-index--light .grommetux-anchor--disabled:hover.grommetux-anchor--primary, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor--disabled:hover.grommetux-anchor--primary {
       color: #0a64a0; }
 
@@ -2045,13 +2021,13 @@ ul, ol, dd {
 .grommet input[type="submit"],
 .grommet button:not(.grommetux-button) {
   background-color: transparent;
-  border: 2px solid #0a64a0;
+  border: 2px solid #434343;
   border-radius: 4px 4px 4px 4px;
   color: #333;
-  font-size: 19px;
-  font-size: 1.1875rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   text-align: center;
   outline: none;
@@ -2077,7 +2053,7 @@ ul, ol, dd {
   .grommet input[type="submit"], .grommetux-background-color-index--light
   .grommet button:not(.grommetux-button), .grommetux-background-color-index--dark .grommetux-background-color-index--light
   .grommet button:not(.grommetux-button) {
-    border-color: #0a64a0; }
+    border-color: #434343; }
   .grommet input[type="button"]:focus,
   .grommet input[type="submit"]:focus,
   .grommet button:not(.grommetux-button):focus {
@@ -2091,13 +2067,13 @@ ul, ol, dd {
 
 .grommetux-button {
   background-color: transparent;
-  border: 2px solid #0a64a0;
+  border: 2px solid #434343;
   border-radius: 4px 4px 4px 4px;
   color: #333;
-  font-size: 19px;
-  font-size: 1.1875rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   text-align: center;
   outline: none;
@@ -2111,7 +2087,7 @@ ul, ol, dd {
   .grommetux-background-color-index--dark .grommetux-button, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button {
     border-color: rgba(255, 255, 255, 0.7); }
   .grommetux-background-color-index--light .grommetux-button, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-button {
-    border-color: #0a64a0; }
+    border-color: #434343; }
   .grommetux-button--focus {
     border: 2px solid #84b1cf;
     box-shadow: 0 0 1px 1px #84b1cf; }
@@ -2198,10 +2174,10 @@ ul, ol, dd {
   margin-left: 12px; }
 
 .grommetux-button--primary {
-  background-color: #0a64a0;
+  background-color: #434343;
   color: #fff; }
   .grommetux-button--primary:not(.grommetux-button--focus) {
-    border-color: #0a64a0; }
+    border-color: #434343; }
   .grommetux-button--primary:hover:not(.grommetux-button--disabled) {
     color: #fff; }
     .grommetux-button--primary:hover:not(.grommetux-button--disabled) .grommetux-button__icon .grommetux-control-icon {
@@ -2399,8 +2375,8 @@ ul, ol, dd {
   stroke-width: 2px; }
 
 .grommetux-carousel-controls__control--active {
-  stroke: #0a64a0;
-  fill: #0a64a0; }
+  stroke: #434343;
+  fill: #434343; }
 
 .grommetux-carousel__track {
   display: flex;
@@ -2454,8 +2430,8 @@ ul, ol, dd {
   -webkit-filter: drop-shadow(1px 1px 1px rgba(170, 170, 170, 0.5)); }
 
 .grommetux-carousel__control--active {
-  stroke: #0a64a0;
-  fill: #0a64a0; }
+  stroke: #434343;
+  fill: #434343; }
 
 .grommetux-carousel--hide-controls .grommetux-control-icon-previous,
 .grommetux-carousel--hide-controls .grommetux-control-icon-next,
@@ -2931,7 +2907,7 @@ _::-webkit-:not(:root:root),
   .grommetux-chart-marker.grommetux-color-index-unset {
     stroke: rgba(221, 221, 221, 0.7); }
   .grommetux-chart-marker.grommetux-color-index-brand {
-    stroke: rgba(10, 100, 160, 0.7); }
+    stroke: rgba(67, 67, 67, 0.7); }
   .grommetux-chart-marker.grommetux-color-index-critical {
     stroke: rgba(255, 133, 107, 0.7); }
   .grommetux-chart-marker.grommetux-color-index-error {
@@ -2971,7 +2947,7 @@ _::-webkit-:not(:root:root),
   .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-unset, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-unset {
     stroke: #ddd; }
   .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-brand, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-brand {
-    stroke: #0a64a0; }
+    stroke: #434343; }
   .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-critical, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-critical {
     stroke: #FF856B; }
   .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-error, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-error {
@@ -3004,13 +2980,15 @@ _::-webkit-:not(:root:root),
     stroke: #84b1cf; }
   .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-accent-2, .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-accent-4, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-accent-2, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-accent-4 {
     stroke: #614767; }
-  .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-1, .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-5, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-1, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-5 {
+  .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-1, .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-6, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-1, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-6 {
     stroke: #0a64a0; }
-  .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-2, .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-6, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-2, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-6 {
-    stroke: #5F7A76; }
-  .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-3, .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-7, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-3, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-7 {
+  .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-2, .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-7, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-2, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-7 {
+    stroke: #f6f6f6; }
+  .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-3, .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-8, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-3, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-8 {
+    stroke: #ffbf00; }
+  .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-4, .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-9, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-4, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-9 {
     stroke: #80746E; }
-  .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-4, .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-8, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-4, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-8 {
+  .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-5, .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-10, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-5, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-neutral-10 {
     stroke: #767676; }
   .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-light-1, .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-light-3, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-light-1, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-chart-marker.grommetux-color-index-light-3 {
     stroke: #ffffff; }
@@ -3019,7 +2997,7 @@ _::-webkit-:not(:root:root),
   .grommetux-background-color-index--light .grommetux-chart-marker.grommetux-color-index-unset, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-chart-marker.grommetux-color-index-unset {
     stroke: rgba(221, 221, 221, 0.7); }
   .grommetux-background-color-index--light .grommetux-chart-marker.grommetux-color-index-brand, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-chart-marker.grommetux-color-index-brand {
-    stroke: rgba(10, 100, 160, 0.7); }
+    stroke: rgba(67, 67, 67, 0.7); }
   .grommetux-background-color-index--light .grommetux-chart-marker.grommetux-color-index-critical, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-chart-marker.grommetux-color-index-critical {
     stroke: rgba(255, 133, 107, 0.7); }
   .grommetux-background-color-index--light .grommetux-chart-marker.grommetux-color-index-error, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-chart-marker.grommetux-color-index-error {
@@ -3058,7 +3036,7 @@ _::-webkit-:not(:root:root),
   .grommetux-chart-graph--line.grommetux-color-index-unset {
     stroke: rgba(221, 221, 221, 0.7); }
   .grommetux-chart-graph--line.grommetux-color-index-brand {
-    stroke: rgba(10, 100, 160, 0.7); }
+    stroke: rgba(67, 67, 67, 0.7); }
   .grommetux-chart-graph--line.grommetux-color-index-critical {
     stroke: rgba(255, 133, 107, 0.7); }
   .grommetux-chart-graph--line.grommetux-color-index-error {
@@ -3097,7 +3075,7 @@ _::-webkit-:not(:root:root),
   .grommetux-chart-graph--bar.grommetux-color-index-unset {
     stroke: rgba(221, 221, 221, 0.7); }
   .grommetux-chart-graph--bar.grommetux-color-index-brand {
-    stroke: rgba(10, 100, 160, 0.7); }
+    stroke: rgba(67, 67, 67, 0.7); }
   .grommetux-chart-graph--bar.grommetux-color-index-critical {
     stroke: rgba(255, 133, 107, 0.7); }
   .grommetux-chart-graph--bar.grommetux-color-index-error {
@@ -3143,7 +3121,7 @@ _::-webkit-:not(:root:root),
   .grommetux-chart-graph--area.grommetux-color-index-unset {
     fill: rgba(221, 221, 221, 0.7); }
   .grommetux-chart-graph--area.grommetux-color-index-brand {
-    fill: rgba(10, 100, 160, 0.7); }
+    fill: rgba(67, 67, 67, 0.7); }
   .grommetux-chart-graph--area.grommetux-color-index-critical {
     fill: rgba(255, 133, 107, 0.7); }
   .grommetux-chart-graph--area.grommetux-color-index-error {
@@ -3194,7 +3172,7 @@ _::-webkit-:not(:root:root),
   .grommetux-chart-graph__point.grommetux-color-index-unset {
     fill: rgba(221, 221, 221, 0.9); }
   .grommetux-chart-graph__point.grommetux-color-index-brand {
-    fill: rgba(10, 100, 160, 0.9); }
+    fill: rgba(67, 67, 67, 0.9); }
   .grommetux-chart-graph__point.grommetux-color-index-critical {
     fill: rgba(255, 133, 107, 0.9); }
   .grommetux-chart-graph__point.grommetux-color-index-error {
@@ -3233,7 +3211,7 @@ _::-webkit-:not(:root:root),
   .grommetux-chart-graph__point--active.grommetux-color-index-unset {
     fill: #ddd; }
   .grommetux-chart-graph__point--active.grommetux-color-index-brand {
-    fill: #0a64a0; }
+    fill: #434343; }
   .grommetux-chart-graph__point--active.grommetux-color-index-critical {
     fill: #FF856B; }
   .grommetux-chart-graph__point--active.grommetux-color-index-error {
@@ -3312,11 +3290,11 @@ _::-webkit-:not(:root:root),
   width: 0;
   height: 0; }
   .grommetux-check-box__input:checked + .grommetux-check-box__control {
-    border-color: #0a64a0; }
+    border-color: #434343; }
     .grommetux-background-color-index--dark .grommetux-check-box__input:checked + .grommetux-check-box__control, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-check-box__input:checked + .grommetux-check-box__control {
       border-color: #fff; }
     .grommetux-background-color-index--light .grommetux-check-box__input:checked + .grommetux-check-box__control, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-check-box__input:checked + .grommetux-check-box__control {
-      border-color: #0a64a0; }
+      border-color: #434343; }
     .grommetux-check-box__input:checked + .grommetux-check-box__control .grommetux-check-box__control-check {
       display: block; }
     .grommetux-check-box__input:checked + .grommetux-check-box__control + .grommetux-check-box__label {
@@ -3356,11 +3334,11 @@ _::-webkit-:not(:root:root),
   width: 24px;
   height: 24px;
   stroke-width: 4px;
-  stroke: #0a64a0; }
+  stroke: #434343; }
   .grommetux-background-color-index--dark .grommetux-check-box__control-check, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-check-box__control-check {
     stroke: #fff; }
   .grommetux-background-color-index--light .grommetux-check-box__control-check, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-check-box__control-check {
-    stroke: #0a64a0; }
+    stroke: #434343; }
 
 .grommetux-check-box__label {
   display: inline-block;
@@ -3435,23 +3413,23 @@ _::-webkit-:not(:root:root),
       border-color: #666; }
 
 .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control {
-  background-color: #0a64a0; }
+  background-color: #434343; }
   .grommetux-background-color-index--dark .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control {
     background-color: rgba(255, 255, 255, 0.2); }
     .grommetux-background-color-index--dark .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control .grommetux-check-box__control-check, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control .grommetux-check-box__control-check {
       stroke: transparent; }
   .grommetux-background-color-index--light .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control {
-    background-color: #0a64a0; }
+    background-color: #434343; }
   .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control:after {
     content: "";
     background-color: #fff;
-    border-color: #0a64a0;
+    border-color: #434343;
     margin-left: 24px; }
     .grommetux-background-color-index--dark .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control:after, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control:after {
       background-color: #fff;
       border-color: rgba(255, 255, 255, 0.7); }
     .grommetux-background-color-index--light .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control:after, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control:after {
-      border-color: #0a64a0; }
+      border-color: #434343; }
   .grommetux-check-box--toggle .grommetux-check-box__input:checked + .grommetux-check-box__control .grommetux-check-box__control-check {
     display: none; }
 
@@ -3486,189 +3464,233 @@ _::-webkit-:not(:root:root),
     color: #333; }
 
 .grommetux-background-color-index-brand {
-  background-color: #0a64a0; }
+  background-color: #434343; }
   .grommetux-background-color-index-brand-a {
-    background-color: rgba(10, 100, 160, 0.94); }
+    background-color: rgba(67, 67, 67, 0.94); }
 
 .grommetux-border-color-index-brand {
-  border-color: #0a64a0; }
+  border-color: #434343; }
   .grommetux-border-color-index-brand-a {
-    border-color: rgba(10, 100, 160, 0.94); }
+    border-color: rgba(67, 67, 67, 0.94); }
 
 .grommetux-background-color-index-neutral-1,
-.grommetux-background-color-index-neutral-5 {
+.grommetux-background-color-index-neutral-6 {
   background-color: #0a64a0; }
 
 .grommetux-background-color-index-neutral-1-t,
-.grommetux-background-color-index-neutral-5-t {
+.grommetux-background-color-index-neutral-6-t {
   background-color: #166ca5; }
 
 .grommetux-background-color-index-neutral-1-a,
-.grommetux-background-color-index-neutral-5-a {
+.grommetux-background-color-index-neutral-6-a {
   background-color: rgba(10, 100, 160, 0.8); }
 
 .grommetux-border-color-index-neutral-1,
-.grommetux-border-color-index-neutral-5 {
+.grommetux-border-color-index-neutral-6 {
   border-color: #0a64a0; }
 
 .grommetux-border-color-index-neutral-1-t,
-.grommetux-border-color-index-neutral-5-t {
+.grommetux-border-color-index-neutral-6-t {
   border-color: #166ca5; }
 
 .grommetux-color-index-neutral-1,
-.grommetux-color-index-neutral-5 {
+.grommetux-color-index-neutral-6 {
   color: #0a64a0; }
 
 .grommetux-color-index-neutral-1-t,
-.grommetux-color-index-neutral-5-t {
+.grommetux-color-index-neutral-6-t {
   color: #166ca5; }
 
 .grommetux-background-hover-color-index-neutral-1:hover,
-.grommetux-background-hover-color-index-neutral-5:hover {
+.grommetux-background-hover-color-index-neutral-6:hover {
   background-color: rgba(10, 100, 160, 0.3); }
 
 .grommetux-border-small-hover-color-index-neutral-1:hover,
-.grommetux-border-small-hover-color-index-neutral-5:hover {
+.grommetux-border-small-hover-color-index-neutral-6:hover {
   box-shadow: 0 0 0 1px #0a64a0; }
 
 .grommetux-border-medium-hover-color-index-neutral-1:hover,
-.grommetux-border-medium-hover-color-index-neutral-5:hover {
+.grommetux-border-medium-hover-color-index-neutral-6:hover {
   box-shadow: 0 0 0 12px #0a64a0; }
 
 .grommetux-border-large-hover-color-index-neutral-1:hover,
-.grommetux-border-large-hover-color-index-neutral-5:hover {
+.grommetux-border-large-hover-color-index-neutral-6:hover {
   box-shadow: 0 0 0 24px #0a64a0; }
 
 .grommetux-background-color-index-neutral-2,
-.grommetux-background-color-index-neutral-6 {
-  background-color: #5F7A76; }
+.grommetux-background-color-index-neutral-7 {
+  background-color: #f6f6f6; }
 
 .grommetux-background-color-index-neutral-2-t,
-.grommetux-background-color-index-neutral-6-t {
-  background-color: #67817d; }
+.grommetux-background-color-index-neutral-7-t {
+  background-color: #f6f6f6; }
 
 .grommetux-background-color-index-neutral-2-a,
-.grommetux-background-color-index-neutral-6-a {
-  background-color: rgba(95, 122, 118, 0.8); }
+.grommetux-background-color-index-neutral-7-a {
+  background-color: rgba(246, 246, 246, 0.8); }
 
 .grommetux-border-color-index-neutral-2,
-.grommetux-border-color-index-neutral-6 {
-  border-color: #5F7A76; }
+.grommetux-border-color-index-neutral-7 {
+  border-color: #f6f6f6; }
 
 .grommetux-border-color-index-neutral-2-t,
-.grommetux-border-color-index-neutral-6-t {
-  border-color: #67817d; }
+.grommetux-border-color-index-neutral-7-t {
+  border-color: #f6f6f6; }
 
 .grommetux-color-index-neutral-2,
-.grommetux-color-index-neutral-6 {
-  color: #5F7A76; }
+.grommetux-color-index-neutral-7 {
+  color: #f6f6f6; }
 
 .grommetux-color-index-neutral-2-t,
-.grommetux-color-index-neutral-6-t {
-  color: #67817d; }
+.grommetux-color-index-neutral-7-t {
+  color: #f6f6f6; }
 
 .grommetux-background-hover-color-index-neutral-2:hover,
-.grommetux-background-hover-color-index-neutral-6:hover {
-  background-color: rgba(95, 122, 118, 0.3); }
+.grommetux-background-hover-color-index-neutral-7:hover {
+  background-color: rgba(246, 246, 246, 0.3); }
 
 .grommetux-border-small-hover-color-index-neutral-2:hover,
-.grommetux-border-small-hover-color-index-neutral-6:hover {
-  box-shadow: 0 0 0 1px #5F7A76; }
+.grommetux-border-small-hover-color-index-neutral-7:hover {
+  box-shadow: 0 0 0 1px #f6f6f6; }
 
 .grommetux-border-medium-hover-color-index-neutral-2:hover,
-.grommetux-border-medium-hover-color-index-neutral-6:hover {
-  box-shadow: 0 0 0 12px #5F7A76; }
+.grommetux-border-medium-hover-color-index-neutral-7:hover {
+  box-shadow: 0 0 0 12px #f6f6f6; }
 
 .grommetux-border-large-hover-color-index-neutral-2:hover,
-.grommetux-border-large-hover-color-index-neutral-6:hover {
-  box-shadow: 0 0 0 24px #5F7A76; }
+.grommetux-border-large-hover-color-index-neutral-7:hover {
+  box-shadow: 0 0 0 24px #f6f6f6; }
 
 .grommetux-background-color-index-neutral-3,
-.grommetux-background-color-index-neutral-7 {
-  background-color: #80746E; }
+.grommetux-background-color-index-neutral-8 {
+  background-color: #ffbf00; }
 
 .grommetux-background-color-index-neutral-3-t,
-.grommetux-background-color-index-neutral-7-t {
-  background-color: #867b75; }
+.grommetux-background-color-index-neutral-8-t {
+  background-color: #ffc20d; }
 
 .grommetux-background-color-index-neutral-3-a,
-.grommetux-background-color-index-neutral-7-a {
-  background-color: rgba(128, 116, 110, 0.8); }
+.grommetux-background-color-index-neutral-8-a {
+  background-color: rgba(255, 191, 0, 0.8); }
 
 .grommetux-border-color-index-neutral-3,
-.grommetux-border-color-index-neutral-7 {
-  border-color: #80746E; }
+.grommetux-border-color-index-neutral-8 {
+  border-color: #ffbf00; }
 
 .grommetux-border-color-index-neutral-3-t,
-.grommetux-border-color-index-neutral-7-t {
-  border-color: #867b75; }
+.grommetux-border-color-index-neutral-8-t {
+  border-color: #ffc20d; }
 
 .grommetux-color-index-neutral-3,
-.grommetux-color-index-neutral-7 {
-  color: #80746E; }
+.grommetux-color-index-neutral-8 {
+  color: #ffbf00; }
 
 .grommetux-color-index-neutral-3-t,
-.grommetux-color-index-neutral-7-t {
-  color: #867b75; }
+.grommetux-color-index-neutral-8-t {
+  color: #ffc20d; }
 
 .grommetux-background-hover-color-index-neutral-3:hover,
-.grommetux-background-hover-color-index-neutral-7:hover {
-  background-color: rgba(128, 116, 110, 0.3); }
+.grommetux-background-hover-color-index-neutral-8:hover {
+  background-color: rgba(255, 191, 0, 0.3); }
 
 .grommetux-border-small-hover-color-index-neutral-3:hover,
-.grommetux-border-small-hover-color-index-neutral-7:hover {
-  box-shadow: 0 0 0 1px #80746E; }
+.grommetux-border-small-hover-color-index-neutral-8:hover {
+  box-shadow: 0 0 0 1px #ffbf00; }
 
 .grommetux-border-medium-hover-color-index-neutral-3:hover,
-.grommetux-border-medium-hover-color-index-neutral-7:hover {
-  box-shadow: 0 0 0 12px #80746E; }
+.grommetux-border-medium-hover-color-index-neutral-8:hover {
+  box-shadow: 0 0 0 12px #ffbf00; }
 
 .grommetux-border-large-hover-color-index-neutral-3:hover,
-.grommetux-border-large-hover-color-index-neutral-7:hover {
-  box-shadow: 0 0 0 24px #80746E; }
+.grommetux-border-large-hover-color-index-neutral-8:hover {
+  box-shadow: 0 0 0 24px #ffbf00; }
 
 .grommetux-background-color-index-neutral-4,
-.grommetux-background-color-index-neutral-8 {
-  background-color: #767676; }
+.grommetux-background-color-index-neutral-9 {
+  background-color: #80746E; }
 
 .grommetux-background-color-index-neutral-4-t,
-.grommetux-background-color-index-neutral-8-t {
-  background-color: #7d7d7d; }
+.grommetux-background-color-index-neutral-9-t {
+  background-color: #867b75; }
 
 .grommetux-background-color-index-neutral-4-a,
-.grommetux-background-color-index-neutral-8-a {
-  background-color: rgba(118, 118, 118, 0.8); }
+.grommetux-background-color-index-neutral-9-a {
+  background-color: rgba(128, 116, 110, 0.8); }
 
 .grommetux-border-color-index-neutral-4,
-.grommetux-border-color-index-neutral-8 {
-  border-color: #767676; }
+.grommetux-border-color-index-neutral-9 {
+  border-color: #80746E; }
 
 .grommetux-border-color-index-neutral-4-t,
-.grommetux-border-color-index-neutral-8-t {
-  border-color: #7d7d7d; }
+.grommetux-border-color-index-neutral-9-t {
+  border-color: #867b75; }
 
 .grommetux-color-index-neutral-4,
-.grommetux-color-index-neutral-8 {
-  color: #767676; }
+.grommetux-color-index-neutral-9 {
+  color: #80746E; }
 
 .grommetux-color-index-neutral-4-t,
-.grommetux-color-index-neutral-8-t {
-  color: #7d7d7d; }
+.grommetux-color-index-neutral-9-t {
+  color: #867b75; }
 
 .grommetux-background-hover-color-index-neutral-4:hover,
-.grommetux-background-hover-color-index-neutral-8:hover {
-  background-color: rgba(118, 118, 118, 0.3); }
+.grommetux-background-hover-color-index-neutral-9:hover {
+  background-color: rgba(128, 116, 110, 0.3); }
 
 .grommetux-border-small-hover-color-index-neutral-4:hover,
-.grommetux-border-small-hover-color-index-neutral-8:hover {
-  box-shadow: 0 0 0 1px #767676; }
+.grommetux-border-small-hover-color-index-neutral-9:hover {
+  box-shadow: 0 0 0 1px #80746E; }
 
 .grommetux-border-medium-hover-color-index-neutral-4:hover,
-.grommetux-border-medium-hover-color-index-neutral-8:hover {
-  box-shadow: 0 0 0 12px #767676; }
+.grommetux-border-medium-hover-color-index-neutral-9:hover {
+  box-shadow: 0 0 0 12px #80746E; }
 
 .grommetux-border-large-hover-color-index-neutral-4:hover,
-.grommetux-border-large-hover-color-index-neutral-8:hover {
+.grommetux-border-large-hover-color-index-neutral-9:hover {
+  box-shadow: 0 0 0 24px #80746E; }
+
+.grommetux-background-color-index-neutral-5,
+.grommetux-background-color-index-neutral-10 {
+  background-color: #767676; }
+
+.grommetux-background-color-index-neutral-5-t,
+.grommetux-background-color-index-neutral-10-t {
+  background-color: #7d7d7d; }
+
+.grommetux-background-color-index-neutral-5-a,
+.grommetux-background-color-index-neutral-10-a {
+  background-color: rgba(118, 118, 118, 0.8); }
+
+.grommetux-border-color-index-neutral-5,
+.grommetux-border-color-index-neutral-10 {
+  border-color: #767676; }
+
+.grommetux-border-color-index-neutral-5-t,
+.grommetux-border-color-index-neutral-10-t {
+  border-color: #7d7d7d; }
+
+.grommetux-color-index-neutral-5,
+.grommetux-color-index-neutral-10 {
+  color: #767676; }
+
+.grommetux-color-index-neutral-5-t,
+.grommetux-color-index-neutral-10-t {
+  color: #7d7d7d; }
+
+.grommetux-background-hover-color-index-neutral-5:hover,
+.grommetux-background-hover-color-index-neutral-10:hover {
+  background-color: rgba(118, 118, 118, 0.3); }
+
+.grommetux-border-small-hover-color-index-neutral-5:hover,
+.grommetux-border-small-hover-color-index-neutral-10:hover {
+  box-shadow: 0 0 0 1px #767676; }
+
+.grommetux-border-medium-hover-color-index-neutral-5:hover,
+.grommetux-border-medium-hover-color-index-neutral-10:hover {
+  box-shadow: 0 0 0 12px #767676; }
+
+.grommetux-border-large-hover-color-index-neutral-5:hover,
+.grommetux-border-large-hover-color-index-neutral-10:hover {
   box-shadow: 0 0 0 24px #767676; }
 
 .grommetux-background-color-index-accent-1,
@@ -4249,7 +4271,7 @@ _::-webkit-:not(:root:root),
   color: #666; }
 
 .grommetux-date-time-drop__day--active {
-  background-color: #0a64a0;
+  background-color: #434343;
   color: rgba(255, 255, 255, 0.85);
   font-weight: 700; }
 
@@ -4290,7 +4312,7 @@ _::-webkit-:not(:root:root),
   .grommetux-distribution__item-box.grommetux-color-index-unset {
     fill: #ddd; }
   .grommetux-distribution__item-box.grommetux-color-index-brand {
-    fill: #0a64a0; }
+    fill: #434343; }
   .grommetux-distribution__item-box.grommetux-color-index-critical {
     fill: #FF856B; }
   .grommetux-distribution__item-box.grommetux-color-index-error {
@@ -4333,7 +4355,7 @@ _::-webkit-:not(:root:root),
   stroke: #ddd; }
 
 .grommetux-distribution__item-icons.grommetux-color-index-brand {
-  stroke: #0a64a0; }
+  stroke: #434343; }
 
 .grommetux-distribution__item-icons.grommetux-color-index-critical {
   stroke: #FF856B; }
@@ -4383,16 +4405,19 @@ _::-webkit-:not(:root:root),
 .grommetux-distribution__item-icons.grommetux-color-index-accent-2, .grommetux-distribution__item-icons.grommetux-color-index-accent-4 {
   stroke: #614767; }
 
-.grommetux-distribution__item-icons.grommetux-color-index-neutral-1, .grommetux-distribution__item-icons.grommetux-color-index-neutral-5 {
+.grommetux-distribution__item-icons.grommetux-color-index-neutral-1, .grommetux-distribution__item-icons.grommetux-color-index-neutral-6 {
   stroke: #0a64a0; }
 
-.grommetux-distribution__item-icons.grommetux-color-index-neutral-2, .grommetux-distribution__item-icons.grommetux-color-index-neutral-6 {
-  stroke: #5F7A76; }
+.grommetux-distribution__item-icons.grommetux-color-index-neutral-2, .grommetux-distribution__item-icons.grommetux-color-index-neutral-7 {
+  stroke: #f6f6f6; }
 
-.grommetux-distribution__item-icons.grommetux-color-index-neutral-3, .grommetux-distribution__item-icons.grommetux-color-index-neutral-7 {
+.grommetux-distribution__item-icons.grommetux-color-index-neutral-3, .grommetux-distribution__item-icons.grommetux-color-index-neutral-8 {
+  stroke: #ffbf00; }
+
+.grommetux-distribution__item-icons.grommetux-color-index-neutral-4, .grommetux-distribution__item-icons.grommetux-color-index-neutral-9 {
   stroke: #80746E; }
 
-.grommetux-distribution__item-icons.grommetux-color-index-neutral-4, .grommetux-distribution__item-icons.grommetux-color-index-neutral-8 {
+.grommetux-distribution__item-icons.grommetux-color-index-neutral-5, .grommetux-distribution__item-icons.grommetux-color-index-neutral-10 {
   stroke: #767676; }
 
 .grommetux-distribution__item-icons.grommetux-color-index-light-1, .grommetux-distribution__item-icons.grommetux-color-index-light-3 {
@@ -4414,13 +4439,13 @@ _::-webkit-:not(:root:root),
     color: #fff; }
   .grommetux-distribution__label.grommetux-background-color-index-ok {
     color: #fff; }
-  .grommetux-distribution__label.grommetux-background-color-index-neutral-1, .grommetux-distribution__label.grommetux-background-color-index-neutral-5 {
+  .grommetux-distribution__label.grommetux-background-color-index-neutral-1, .grommetux-distribution__label.grommetux-background-color-index-neutral-6 {
     color: #fff; }
-  .grommetux-distribution__label.grommetux-background-color-index-neutral-2, .grommetux-distribution__label.grommetux-background-color-index-neutral-6 {
+  .grommetux-distribution__label.grommetux-background-color-index-neutral-3, .grommetux-distribution__label.grommetux-background-color-index-neutral-8 {
     color: #fff; }
-  .grommetux-distribution__label.grommetux-background-color-index-neutral-3, .grommetux-distribution__label.grommetux-background-color-index-neutral-7 {
+  .grommetux-distribution__label.grommetux-background-color-index-neutral-4, .grommetux-distribution__label.grommetux-background-color-index-neutral-9 {
     color: #fff; }
-  .grommetux-distribution__label.grommetux-background-color-index-neutral-4, .grommetux-distribution__label.grommetux-background-color-index-neutral-8 {
+  .grommetux-distribution__label.grommetux-background-color-index-neutral-5, .grommetux-distribution__label.grommetux-background-color-index-neutral-10 {
     color: #fff; }
   .grommetux-distribution__label.grommetux-background-color-index-graph-1, .grommetux-distribution__label.grommetux-background-color-index-graph-5 {
     color: #fff; }
@@ -4446,11 +4471,11 @@ _::-webkit-:not(:root:root),
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 1.33333;
-  font-weight: 600; }
+  font-weight: 400; }
 
 .grommetux-distribution__label-units {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: inherit;
   margin-left: 6px;
   font-weight: 300; }
@@ -4502,7 +4527,7 @@ _::-webkit-:not(:root:root),
   .grommetux-distribution__loading-indicator.grommetux-color-index-unset {
     stroke: #ddd; }
   .grommetux-distribution__loading-indicator.grommetux-color-index-brand {
-    stroke: #0a64a0; }
+    stroke: #434343; }
   .grommetux-distribution__loading-indicator.grommetux-color-index-critical {
     stroke: #FF856B; }
   .grommetux-distribution__loading-indicator.grommetux-color-index-error {
@@ -4535,13 +4560,15 @@ _::-webkit-:not(:root:root),
     stroke: #84b1cf; }
   .grommetux-distribution__loading-indicator.grommetux-color-index-accent-2, .grommetux-distribution__loading-indicator.grommetux-color-index-accent-4 {
     stroke: #614767; }
-  .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-1, .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-5 {
+  .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-1, .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-6 {
     stroke: #0a64a0; }
-  .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-2, .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-6 {
-    stroke: #5F7A76; }
-  .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-3, .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-7 {
+  .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-2, .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-7 {
+    stroke: #f6f6f6; }
+  .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-3, .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-8 {
+    stroke: #ffbf00; }
+  .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-4, .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-9 {
     stroke: #80746E; }
-  .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-4, .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-8 {
+  .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-5, .grommetux-distribution__loading-indicator.grommetux-color-index-neutral-10 {
     stroke: #767676; }
   .grommetux-distribution__loading-indicator.grommetux-color-index-light-1, .grommetux-distribution__loading-indicator.grommetux-color-index-light-3 {
     stroke: #ffffff; }
@@ -4783,7 +4810,7 @@ _::-webkit-:not(:root:root),
       font-size: 24px;
       font-size: 1.5rem;
       line-height: 1;
-      font-weight: 600;
+      font-weight: 400;
       margin-bottom: 12px; }
     .grommetux-form fieldset > *:not(.grommetux-form-field) + .grommetux-form-field {
       margin-top: 12px; }
@@ -5230,7 +5257,7 @@ _::-webkit-:not(:root:root),
 
 .grommetux-form-field--strong input:not([type]),
 .grommetux-form-field--strong input[type="text"] {
-  font-weight: 600; }
+  font-weight: 400; }
 
 .grommetux-header {
   min-height: 72px;
@@ -5321,35 +5348,35 @@ header.grommetux-header--primary .grommetux-header__wrapper {
 
 @media screen and (min-width: 45em) {
   h1.grommetux-heading {
-    font-size: 48px;
-    font-size: 3rem;
-    line-height: 1.125; } }
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 1.1; } }
 
 @media screen and (max-width: 44.9375em) {
   h1.grommetux-heading {
     font-size: 36px;
     font-size: 2.25rem;
-    line-height: 1.125; } }
+    line-height: 1.1; } }
 
 @media screen and (min-width: 45em) {
   h2.grommetux-heading {
-    font-size: 36px;
-    font-size: 2.25rem;
-    line-height: 1.23; } }
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.1; } }
 
 @media screen and (max-width: 44.9375em) {
   h2.grommetux-heading {
-    font-size: 30px;
-    font-size: 1.875rem;
-    line-height: 1.23; } }
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.1; } }
 
 h3.grommetux-heading {
-  font-size: 24px;
-  line-height: 1.333; }
+  font-size: 18px;
+  line-height: 1.1; }
 
 h4.grommetux-heading {
-  font-size: 18px;
-  line-height: 1.333; }
+  font-size: 16px;
+  line-height: 1.1; }
 
 h5.grommetux-heading {
   font-size: 16px;
@@ -5400,7 +5427,7 @@ h6.grommetux-heading {
   font-size: 75%; }
 
 .grommetux-heading--strong {
-  font-weight: 600; }
+  font-weight: 400; }
 
 .grommetux-heading--truncate {
   white-space: nowrap;
@@ -5478,7 +5505,7 @@ h6.grommetux-heading {
     line-height: 1; } }
 
 .grommetux-headline--strong {
-  font-weight: 600; }
+  font-weight: 400; }
 
 .grommetux-hero:not(.grommetux-hero--stack) {
   position: relative;
@@ -5601,7 +5628,7 @@ h6.grommetux-heading {
   .grommetux-control-icon.grommetux-color-index-unset {
     stroke: #ddd; }
   .grommetux-control-icon.grommetux-color-index-brand {
-    stroke: #0a64a0; }
+    stroke: #434343; }
   .grommetux-control-icon.grommetux-color-index-critical {
     stroke: #FF856B; }
   .grommetux-control-icon.grommetux-color-index-error {
@@ -5634,13 +5661,15 @@ h6.grommetux-heading {
     stroke: #84b1cf; }
   .grommetux-control-icon.grommetux-color-index-accent-2, .grommetux-control-icon.grommetux-color-index-accent-4 {
     stroke: #614767; }
-  .grommetux-control-icon.grommetux-color-index-neutral-1, .grommetux-control-icon.grommetux-color-index-neutral-5 {
+  .grommetux-control-icon.grommetux-color-index-neutral-1, .grommetux-control-icon.grommetux-color-index-neutral-6 {
     stroke: #0a64a0; }
-  .grommetux-control-icon.grommetux-color-index-neutral-2, .grommetux-control-icon.grommetux-color-index-neutral-6 {
-    stroke: #5F7A76; }
-  .grommetux-control-icon.grommetux-color-index-neutral-3, .grommetux-control-icon.grommetux-color-index-neutral-7 {
+  .grommetux-control-icon.grommetux-color-index-neutral-2, .grommetux-control-icon.grommetux-color-index-neutral-7 {
+    stroke: #f6f6f6; }
+  .grommetux-control-icon.grommetux-color-index-neutral-3, .grommetux-control-icon.grommetux-color-index-neutral-8 {
+    stroke: #ffbf00; }
+  .grommetux-control-icon.grommetux-color-index-neutral-4, .grommetux-control-icon.grommetux-color-index-neutral-9 {
     stroke: #80746E; }
-  .grommetux-control-icon.grommetux-color-index-neutral-4, .grommetux-control-icon.grommetux-color-index-neutral-8 {
+  .grommetux-control-icon.grommetux-color-index-neutral-5, .grommetux-control-icon.grommetux-color-index-neutral-10 {
     stroke: #767676; }
   .grommetux-control-icon.grommetux-color-index-light-1, .grommetux-control-icon.grommetux-color-index-light-3 {
     stroke: #ffffff; }
@@ -5649,7 +5678,7 @@ h6.grommetux-heading {
   .grommetux-control-icon.grommetux-color-index-unset {
     fill: #ddd; }
   .grommetux-control-icon.grommetux-color-index-brand {
-    fill: #0a64a0; }
+    fill: #434343; }
   .grommetux-control-icon.grommetux-color-index-critical {
     fill: #FF856B; }
   .grommetux-control-icon.grommetux-color-index-error {
@@ -5893,7 +5922,7 @@ h6.grommetux-heading {
   .grommetux-logo-icon.grommetux-color-index-unset {
     stroke: #ddd; }
   .grommetux-logo-icon.grommetux-color-index-brand {
-    stroke: #0a64a0; }
+    stroke: #434343; }
   .grommetux-logo-icon.grommetux-color-index-critical {
     stroke: #FF856B; }
   .grommetux-logo-icon.grommetux-color-index-error {
@@ -5926,13 +5955,15 @@ h6.grommetux-heading {
     stroke: #84b1cf; }
   .grommetux-logo-icon.grommetux-color-index-accent-2, .grommetux-logo-icon.grommetux-color-index-accent-4 {
     stroke: #614767; }
-  .grommetux-logo-icon.grommetux-color-index-neutral-1, .grommetux-logo-icon.grommetux-color-index-neutral-5 {
+  .grommetux-logo-icon.grommetux-color-index-neutral-1, .grommetux-logo-icon.grommetux-color-index-neutral-6 {
     stroke: #0a64a0; }
-  .grommetux-logo-icon.grommetux-color-index-neutral-2, .grommetux-logo-icon.grommetux-color-index-neutral-6 {
-    stroke: #5F7A76; }
-  .grommetux-logo-icon.grommetux-color-index-neutral-3, .grommetux-logo-icon.grommetux-color-index-neutral-7 {
+  .grommetux-logo-icon.grommetux-color-index-neutral-2, .grommetux-logo-icon.grommetux-color-index-neutral-7 {
+    stroke: #f6f6f6; }
+  .grommetux-logo-icon.grommetux-color-index-neutral-3, .grommetux-logo-icon.grommetux-color-index-neutral-8 {
+    stroke: #ffbf00; }
+  .grommetux-logo-icon.grommetux-color-index-neutral-4, .grommetux-logo-icon.grommetux-color-index-neutral-9 {
     stroke: #80746E; }
-  .grommetux-logo-icon.grommetux-color-index-neutral-4, .grommetux-logo-icon.grommetux-color-index-neutral-8 {
+  .grommetux-logo-icon.grommetux-color-index-neutral-5, .grommetux-logo-icon.grommetux-color-index-neutral-10 {
     stroke: #767676; }
   .grommetux-logo-icon.grommetux-color-index-light-1, .grommetux-logo-icon.grommetux-color-index-light-3 {
     stroke: #ffffff; }
@@ -6134,9 +6165,9 @@ html.rtl .right-left-icon--right {
     transform: translate(-100%, -50%); } }
 
 .grommetux-label {
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 1.26316;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
   font-weight: 300;
   cursor: inherit; }
   .grommetux-label--align-start {
@@ -6184,9 +6215,9 @@ html.rtl .right-left-icon--right {
     color: #666; }
 
 .grommetux-label--large {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1; }
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333; }
 
 .grommetux-layer {
   position: relative;
@@ -6319,7 +6350,7 @@ html.rtl .right-left-icon--right {
         .grommetux-layer.grommetux-layer--hidden.grommetux-layer--peek.grommetux-layer--align-left .grommetux-layer__container {
           left: auto;
           right: -12px;
-          border-right: 10px solid #0a64a0;
+          border-right: 10px solid #434343;
           -webkit-animation: peek-right 0.5s ease-in-out alternate 5;
           animation: peek-right 0.5s ease-in-out alternate 5; } }
 
@@ -6425,13 +6456,13 @@ html.rtl .right-left-icon--right {
     background-color: rgba(221, 221, 221, 0.5); }
 
 .grommetux-list-item--selected {
-  background-color: #d3e4f0;
+  background-color: #cfcfcf;
   color: #333; }
   .grommetux-background-color-index--dark .grommetux-list-item--selected, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-list-item--selected {
     background-color: rgba(0, 0, 0, 0.15);
     color: #fff; }
   .grommetux-background-color-index--light .grommetux-list-item--selected, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-list-item--selected {
-    background-color: #d3e4f0;
+    background-color: #cfcfcf;
     color: #333; }
 
 .grommetux-list-item--row .grommetux-list-item__annotation {
@@ -6512,7 +6543,7 @@ html.rtl .right-left-icon--right {
   .grommetux-legend__item-swatch.grommetux-color-index-unset {
     stroke: #ddd; }
   .grommetux-legend__item-swatch.grommetux-color-index-brand {
-    stroke: #0a64a0; }
+    stroke: #434343; }
   .grommetux-legend__item-swatch.grommetux-color-index-critical {
     stroke: #FF856B; }
   .grommetux-legend__item-swatch.grommetux-color-index-error {
@@ -6545,13 +6576,15 @@ html.rtl .right-left-icon--right {
     stroke: #84b1cf; }
   .grommetux-legend__item-swatch.grommetux-color-index-accent-2, .grommetux-legend__item-swatch.grommetux-color-index-accent-4 {
     stroke: #614767; }
-  .grommetux-legend__item-swatch.grommetux-color-index-neutral-1, .grommetux-legend__item-swatch.grommetux-color-index-neutral-5 {
+  .grommetux-legend__item-swatch.grommetux-color-index-neutral-1, .grommetux-legend__item-swatch.grommetux-color-index-neutral-6 {
     stroke: #0a64a0; }
-  .grommetux-legend__item-swatch.grommetux-color-index-neutral-2, .grommetux-legend__item-swatch.grommetux-color-index-neutral-6 {
-    stroke: #5F7A76; }
-  .grommetux-legend__item-swatch.grommetux-color-index-neutral-3, .grommetux-legend__item-swatch.grommetux-color-index-neutral-7 {
+  .grommetux-legend__item-swatch.grommetux-color-index-neutral-2, .grommetux-legend__item-swatch.grommetux-color-index-neutral-7 {
+    stroke: #f6f6f6; }
+  .grommetux-legend__item-swatch.grommetux-color-index-neutral-3, .grommetux-legend__item-swatch.grommetux-color-index-neutral-8 {
+    stroke: #ffbf00; }
+  .grommetux-legend__item-swatch.grommetux-color-index-neutral-4, .grommetux-legend__item-swatch.grommetux-color-index-neutral-9 {
     stroke: #80746E; }
-  .grommetux-legend__item-swatch.grommetux-color-index-neutral-4, .grommetux-legend__item-swatch.grommetux-color-index-neutral-8 {
+  .grommetux-legend__item-swatch.grommetux-color-index-neutral-5, .grommetux-legend__item-swatch.grommetux-color-index-neutral-10 {
     stroke: #767676; }
   .grommetux-legend__item-swatch.grommetux-color-index-light-1, .grommetux-legend__item-swatch.grommetux-color-index-light-3 {
     stroke: #ffffff; }
@@ -6625,7 +6658,7 @@ html.rtl .right-left-icon--right {
   .grommetux-map__path.grommetux-color-index-unset {
     stroke: #ddd; }
   .grommetux-map__path.grommetux-color-index-brand {
-    stroke: #0a64a0; }
+    stroke: #434343; }
   .grommetux-map__path.grommetux-color-index-critical {
     stroke: #FF856B; }
   .grommetux-map__path.grommetux-color-index-error {
@@ -6658,13 +6691,15 @@ html.rtl .right-left-icon--right {
     stroke: #84b1cf; }
   .grommetux-map__path.grommetux-color-index-accent-2, .grommetux-map__path.grommetux-color-index-accent-4 {
     stroke: #614767; }
-  .grommetux-map__path.grommetux-color-index-neutral-1, .grommetux-map__path.grommetux-color-index-neutral-5 {
+  .grommetux-map__path.grommetux-color-index-neutral-1, .grommetux-map__path.grommetux-color-index-neutral-6 {
     stroke: #0a64a0; }
-  .grommetux-map__path.grommetux-color-index-neutral-2, .grommetux-map__path.grommetux-color-index-neutral-6 {
-    stroke: #5F7A76; }
-  .grommetux-map__path.grommetux-color-index-neutral-3, .grommetux-map__path.grommetux-color-index-neutral-7 {
+  .grommetux-map__path.grommetux-color-index-neutral-2, .grommetux-map__path.grommetux-color-index-neutral-7 {
+    stroke: #f6f6f6; }
+  .grommetux-map__path.grommetux-color-index-neutral-3, .grommetux-map__path.grommetux-color-index-neutral-8 {
+    stroke: #ffbf00; }
+  .grommetux-map__path.grommetux-color-index-neutral-4, .grommetux-map__path.grommetux-color-index-neutral-9 {
     stroke: #80746E; }
-  .grommetux-map__path.grommetux-color-index-neutral-4, .grommetux-map__path.grommetux-color-index-neutral-8 {
+  .grommetux-map__path.grommetux-color-index-neutral-5, .grommetux-map__path.grommetux-color-index-neutral-10 {
     stroke: #767676; }
   .grommetux-map__path.grommetux-color-index-light-1, .grommetux-map__path.grommetux-color-index-light-3 {
     stroke: #ffffff; }
@@ -6742,9 +6777,9 @@ html.rtl .right-left-icon--right {
 .grommetux-menu {
   position: relative;
   white-space: nowrap;
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 1.26316; }
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 1.41176; }
   .grommetux-menu > * {
     flex: 0 0 auto; }
   .grommetux-menu a:not(.grommetux-button),
@@ -6776,9 +6811,9 @@ html.rtl .right-left-icon--right {
     transition: none; } }
 
 .grommetux-menu__drop {
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 1.26316;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 1.41176;
   max-height: 100vh; }
   .grommetux-menu__drop > * {
     flex-shrink: 0; }
@@ -6793,7 +6828,7 @@ html.rtl .right-left-icon--right {
     text-decoration: none; }
     .grommetux-menu__drop .grommetux-anchor.active, .grommetux-menu__drop .grommetux-anchor:hover, .grommetux-menu__drop .grommetux-anchor:focus {
       text-decoration: none;
-      color: #074975;
+      color: #000001;
       background-color: rgba(221, 221, 221, 0.5); }
   .grommetux-menu__drop .grommetux-menu__control {
     text-align: left; }
@@ -6801,7 +6836,7 @@ html.rtl .right-left-icon--right {
       text-align: right; }
   .grommetux-menu__drop .grommetux-menu__label {
     padding: 12px 24px;
-    font-weight: 600; }
+    font-weight: 400; }
   .grommetux-menu__drop.grommetux-menu__drop--align-right {
     text-align: right; }
     .grommet.rtl .grommetux-menu__drop.grommetux-menu__drop--align-right {
@@ -6838,7 +6873,7 @@ html.rtl .right-left-icon--right {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.1); }
   .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor.active, .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor:hover, .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor:focus, .grommetux-background-color-index--dark .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor.active, .grommetux-background-color-index--dark .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor:hover, .grommetux-background-color-index--dark .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor:focus {
-    color: #074975;
+    color: #000001;
     background-color: rgba(221, 221, 221, 0.5); }
 
 .grommetux-menu--inline.grommetux-menu--row {
@@ -6906,13 +6941,13 @@ html.rtl .right-left-icon--right {
           background-color: rgba(221, 221, 221, 0.5);
           color: #000; }
     .grommetux-menu--primary > a:not(.grommetux-button).grommetux-anchor--active, .grommetux-menu--primary > a:not(.grommetux-button).active {
-      border-color: #0a64a0; }
+      border-color: #434343; }
       .grommetux-background-color-index--dark .grommetux-menu--primary > a:not(.grommetux-button).grommetux-anchor--active, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-menu--primary > a:not(.grommetux-button).grommetux-anchor--active, .grommetux-background-color-index--dark .grommetux-menu--primary > a:not(.grommetux-button).active, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-menu--primary > a:not(.grommetux-button).active {
         border-color: transparent;
         background-color: rgba(0, 0, 0, 0.15);
         color: #fff; }
       .grommetux-background-color-index--light .grommetux-menu--primary > a:not(.grommetux-button).grommetux-anchor--active, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-menu--primary > a:not(.grommetux-button).grommetux-anchor--active, .grommetux-background-color-index--light .grommetux-menu--primary > a:not(.grommetux-button).active, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-menu--primary > a:not(.grommetux-button).active {
-        border-color: #0a64a0; }
+        border-color: #434343; }
   @media screen and (max-width: 44.9375em) {
     .grommetux-menu--primary.grommetux-menu--down {
       display: block; }
@@ -7048,7 +7083,7 @@ html.rtl .right-left-icon--right {
   .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-unset {
     stroke: #ddd; }
   .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-brand {
-    stroke: #0a64a0; }
+    stroke: #434343; }
   .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-critical {
     stroke: #FF856B; }
   .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-error {
@@ -7081,13 +7116,15 @@ html.rtl .right-left-icon--right {
     stroke: #84b1cf; }
   .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-accent-2, .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-accent-4 {
     stroke: #614767; }
-  .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-1, .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-5 {
+  .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-1, .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-6 {
     stroke: #0a64a0; }
-  .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-2, .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-6 {
-    stroke: #5F7A76; }
-  .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-3, .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-7 {
+  .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-2, .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-7 {
+    stroke: #f6f6f6; }
+  .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-3, .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-8 {
+    stroke: #ffbf00; }
+  .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-4, .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-9 {
     stroke: #80746E; }
-  .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-4, .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-8 {
+  .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-5, .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-10 {
     stroke: #767676; }
   .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-light-1, .grommetux-meter--bar .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-light-3 {
     stroke: #ffffff; }
@@ -7107,7 +7144,7 @@ html.rtl .right-left-icon--right {
     stroke: rgba(221, 221, 221, 0.5); }
   .grommetux-meter--bar .grommetux-meter__thresholds .grommetux-meter__slice.grommetux-color-index-brand,
   .grommetux-meter--bar .grommetux-meter__tracks .grommetux-meter__slice.grommetux-color-index-brand {
-    stroke: rgba(10, 100, 160, 0.5); }
+    stroke: rgba(67, 67, 67, 0.5); }
   .grommetux-meter--bar .grommetux-meter__thresholds .grommetux-meter__slice.grommetux-color-index-critical,
   .grommetux-meter--bar .grommetux-meter__tracks .grommetux-meter__slice.grommetux-color-index-critical {
     stroke: rgba(255, 133, 107, 0.5); }
@@ -7377,7 +7414,7 @@ html.rtl .right-left-icon--right {
 .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-brand,
 .grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-brand,
 .grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-brand {
-  stroke: #0a64a0; }
+  stroke: #434343; }
 
 .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-critical,
 .grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-critical,
@@ -7479,32 +7516,39 @@ html.rtl .right-left-icon--right {
 .grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-accent-4 {
   stroke: #614767; }
 
-.grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-1, .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-5,
+.grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-1, .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-6,
 .grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-1,
-.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-5,
+.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-6,
 .grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-1,
-.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-5 {
+.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-6 {
   stroke: #0a64a0; }
 
-.grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-2, .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-6,
+.grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-2, .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-7,
 .grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-2,
-.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-6,
-.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-2,
-.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-6 {
-  stroke: #5F7A76; }
-
-.grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-3, .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-7,
-.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-3,
 .grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-7,
-.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-3,
+.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-2,
 .grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-7 {
+  stroke: #f6f6f6; }
+
+.grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-3, .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-8,
+.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-3,
+.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-8,
+.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-3,
+.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-8 {
+  stroke: #ffbf00; }
+
+.grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-4, .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-9,
+.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-4,
+.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-9,
+.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-4,
+.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-9 {
   stroke: #80746E; }
 
-.grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-4, .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-8,
-.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-4,
-.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-8,
-.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-4,
-.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-8 {
+.grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-5, .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-10,
+.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-5,
+.grommetux-meter--arc .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-10,
+.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-5,
+.grommetux-meter--spiral .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-neutral-10 {
   stroke: #767676; }
 
 .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-light-1, .grommetux-meter--circle .grommetux-meter__values .grommetux-meter__slice.grommetux-color-index-light-3,
@@ -7550,7 +7594,7 @@ html.rtl .right-left-icon--right {
 .grommetux-meter--arc .grommetux-meter__tracks .grommetux-meter__slice.grommetux-color-index-brand,
 .grommetux-meter--spiral .grommetux-meter__thresholds .grommetux-meter__slice.grommetux-color-index-brand,
 .grommetux-meter--spiral .grommetux-meter__tracks .grommetux-meter__slice.grommetux-color-index-brand {
-  stroke: rgba(10, 100, 160, 0.5); }
+  stroke: rgba(67, 67, 67, 0.5); }
 
 .grommetux-meter--circle .grommetux-meter__thresholds .grommetux-meter__slice.grommetux-color-index-critical,
 .grommetux-meter--circle .grommetux-meter__tracks .grommetux-meter__slice.grommetux-color-index-critical,
@@ -7874,8 +7918,8 @@ html.rtl .right-left-icon--right {
   vertical-align: top; }
 
 .grommetux-notification {
-  font-size: 19px;
-  font-size: 1.1875rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px; }
   .grommetux-notification--status-critical .grommetux-notification__status .grommetux-status-icon__base,
   .grommetux-notification--status-critical .grommetux-notification__status .grommetux-status-icon__base .grommetux-status-icon__small {
@@ -7951,8 +7995,8 @@ html.rtl .right-left-icon--right {
     fill: #fff; }
 
 .grommetux-notification__message {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 24px; }
   .grommetux-notification__message + * {
     margin-top: 24px; }
@@ -7965,8 +8009,8 @@ html.rtl .right-left-icon--right {
     margin-left: 24px; }
 
 .grommetux-notification--small .grommetux-notification__message {
-  font-size: 19px;
-  font-size: 1.1875rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px; }
 
 .grommetux-number-input__input {
@@ -8036,7 +8080,7 @@ html.rtl .right-left-icon--right {
     padding-bottom: 24px; }
 
 .grommetux-object__attribute--container > .grommetux-object__attribute-name {
-  font-weight: 600; }
+  font-weight: 400; }
 
 .grommetux-object__attribute--unset .grommetux-object__attribute-value {
   font-style: italic;
@@ -8094,15 +8138,15 @@ html.rtl .right-left-icon--right {
   font-size: 24px;
   line-height: 1.167; }
   .grommetux-paragraph--large a {
-    color: #0a64a0;
-    font-weight: 600; }
+    color: #434343;
+    font-weight: 400; }
 
 .grommetux-paragraph--xlarge {
   font-size: 32px;
   line-height: 1.1875; }
   .grommetux-paragraph--xlarge a {
-    color: #0a64a0;
-    font-weight: 600; }
+    color: #434343;
+    font-weight: 400; }
 
 .grommetux-paragraph--width-large {
   max-width: 100%; }
@@ -8249,11 +8293,11 @@ html.rtl .right-left-icon--right {
   position: absolute; }
 
 .grommetux-radio-button__input:checked + .grommetux-radio-button__control {
-  border-color: #0a64a0; }
+  border-color: #434343; }
   .grommetux-background-color-index--dark .grommetux-radio-button__input:checked + .grommetux-radio-button__control, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-radio-button__input:checked + .grommetux-radio-button__control {
     border-color: #fff; }
   .grommetux-background-color-index--light .grommetux-radio-button__input:checked + .grommetux-radio-button__control, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-radio-button__input:checked + .grommetux-radio-button__control {
-    border-color: #0a64a0; }
+    border-color: #434343; }
   .grommetux-radio-button__input:checked + .grommetux-radio-button__control + .grommetux-radio-button__label {
     color: #333; }
     .grommetux-background-color-index--dark .grommetux-radio-button__input:checked + .grommetux-radio-button__control + .grommetux-radio-button__label, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-radio-button__input:checked + .grommetux-radio-button__control + .grommetux-radio-button__label {
@@ -8269,12 +8313,12 @@ html.rtl .right-left-icon--right {
   left: 5px;
   width: 10px;
   height: 10px;
-  background-color: #0a64a0;
+  background-color: #434343;
   border-radius: 12px; }
   .grommetux-background-color-index--dark .grommetux-radio-button__input:checked + .grommetux-radio-button__control:after, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-radio-button__input:checked + .grommetux-radio-button__control:after {
     background-color: #fff; }
   .grommetux-background-color-index--light .grommetux-radio-button__input:checked + .grommetux-radio-button__control:after, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-radio-button__input:checked + .grommetux-radio-button__control:after {
-    background-color: #0a64a0; }
+    background-color: #434343; }
 
 .grommetux-radio-button__input:focus + .grommetux-radio-button__control {
   content: "";
@@ -8289,7 +8333,7 @@ html.rtl .right-left-icon--right {
   margin-right: 12px;
   vertical-align: middle;
   background-color: inherit;
-  color: #074975;
+  color: #2c2c2c;
   border: 2px solid #666;
   border-radius: 24px; }
   html.rtl .grommetux-radio-button__control {
@@ -8363,8 +8407,8 @@ html.rtl .right-left-icon--right {
       border-color: #84b1cf; }
 
 .grommetux-search__drop {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: inherit; }
   @media screen and (max-width: 44.9375em) {
     .grommetux-search__drop {
@@ -8438,10 +8482,10 @@ html.rtl .right-left-icon--right {
   font-size: 16px;
   font-size: 1rem;
   line-height: normal;
-  padding: 4px 18px;
+  padding: 7px 15px;
   padding-right: 23px; }
   .grommetux-search--small .grommetux-search__input:focus {
-    padding: 3px 17px;
+    padding: 6px 14px;
     padding-right: 22px; }
 
 .grommetux-search--medium .grommetux-search__input {
@@ -8849,7 +8893,7 @@ section:not(.grommetux-section) {
   .grommetux-sun-burst__slice.grommetux-color-index-unset {
     stroke: #ddd; }
   .grommetux-sun-burst__slice.grommetux-color-index-brand {
-    stroke: #0a64a0; }
+    stroke: #434343; }
   .grommetux-sun-burst__slice.grommetux-color-index-critical {
     stroke: #FF856B; }
   .grommetux-sun-burst__slice.grommetux-color-index-error {
@@ -8882,13 +8926,15 @@ section:not(.grommetux-section) {
     stroke: #84b1cf; }
   .grommetux-sun-burst__slice.grommetux-color-index-accent-2, .grommetux-sun-burst__slice.grommetux-color-index-accent-4 {
     stroke: #614767; }
-  .grommetux-sun-burst__slice.grommetux-color-index-neutral-1, .grommetux-sun-burst__slice.grommetux-color-index-neutral-5 {
+  .grommetux-sun-burst__slice.grommetux-color-index-neutral-1, .grommetux-sun-burst__slice.grommetux-color-index-neutral-6 {
     stroke: #0a64a0; }
-  .grommetux-sun-burst__slice.grommetux-color-index-neutral-2, .grommetux-sun-burst__slice.grommetux-color-index-neutral-6 {
-    stroke: #5F7A76; }
-  .grommetux-sun-burst__slice.grommetux-color-index-neutral-3, .grommetux-sun-burst__slice.grommetux-color-index-neutral-7 {
+  .grommetux-sun-burst__slice.grommetux-color-index-neutral-2, .grommetux-sun-burst__slice.grommetux-color-index-neutral-7 {
+    stroke: #f6f6f6; }
+  .grommetux-sun-burst__slice.grommetux-color-index-neutral-3, .grommetux-sun-burst__slice.grommetux-color-index-neutral-8 {
+    stroke: #ffbf00; }
+  .grommetux-sun-burst__slice.grommetux-color-index-neutral-4, .grommetux-sun-burst__slice.grommetux-color-index-neutral-9 {
     stroke: #80746E; }
-  .grommetux-sun-burst__slice.grommetux-color-index-neutral-4, .grommetux-sun-burst__slice.grommetux-color-index-neutral-8 {
+  .grommetux-sun-burst__slice.grommetux-color-index-neutral-5, .grommetux-sun-burst__slice.grommetux-color-index-neutral-10 {
     stroke: #767676; }
   .grommetux-sun-burst__slice.grommetux-color-index-light-1, .grommetux-sun-burst__slice.grommetux-color-index-light-3 {
     stroke: #ffffff; }
@@ -9039,13 +9085,13 @@ section:not(.grommetux-section) {
   .grommetux-table--selectable tbody tr td {
     transition: background-color 0.2s; }
   .grommetux-table--selectable tbody tr.grommetux-table-row--selected td {
-    background-color: #d3e4f0;
+    background-color: #cfcfcf;
     color: #333; }
     .grommetux-background-color-index--dark .grommetux-table--selectable tbody tr.grommetux-table-row--selected td, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-table--selectable tbody tr.grommetux-table-row--selected td {
       background-color: rgba(0, 0, 0, 0.15);
       color: #fff; }
     .grommetux-background-color-index--light .grommetux-table--selectable tbody tr.grommetux-table-row--selected td, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-table--selectable tbody tr.grommetux-table-row--selected td {
-      background-color: #d3e4f0;
+      background-color: #cfcfcf;
       color: #333; }
   .grommetux-table--selectable tbody tr.grommetux-table-row--active td, .grommetux-table--selectable tbody tr:hover td {
     background-color: rgba(221, 221, 221, 0.5);
@@ -9064,8 +9110,8 @@ section:not(.grommetux-section) {
   display: block; }
   .grommetux-table--small td:before {
     font-weight: 300;
-    font-size: 19px;
-    font-size: 1.1875rem;
+    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     content: attr(data-th);
     display: block;
@@ -9274,13 +9320,13 @@ section:not(.grommetux-section) {
     outline: none;
     transition: all 0.2s; }
   .grommetux-tiles--selectable .grommetux-tile--selected {
-    background-color: #d3e4f0;
+    background-color: #cfcfcf;
     color: #333; }
     .grommetux-background-color-index--dark .grommetux-tiles--selectable .grommetux-tile--selected, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-tiles--selectable .grommetux-tile--selected {
       background-color: rgba(0, 0, 0, 0.15);
       color: #fff; }
     .grommetux-background-color-index--light .grommetux-tiles--selectable .grommetux-tile--selected, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-tiles--selectable .grommetux-tile--selected {
-      background-color: #d3e4f0;
+      background-color: #cfcfcf;
       color: #333; }
   .grommetux-tiles--selectable .grommetux-tile--active,
   .grommetux-tiles--selectable .grommetux-tile:hover:not([class*="background-hover-color-index-"]) {
@@ -9395,7 +9441,7 @@ section:not(.grommetux-section) {
   margin-right: 12px; }
   @media screen and (min-width: 45em) {
     .grommetux-title {
-      font-weight: 600; } }
+      font-weight: 400; } }
   .grommetux-title > *:not(:last-child) {
     margin-right: 12px; }
     html.rtl .grommetux-title > *:not(:last-child) {
@@ -9425,12 +9471,12 @@ section:not(.grommetux-section) {
     .grommetux-title--interactive {
       transition: color 0.3s ease-in-out; } }
   .grommetux-title--interactive:hover {
-    color: #0a64a0;
+    color: #434343;
     cursor: pointer; }
   .grommetux-background-color-index--dark .grommetux-title--interactive:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-title--interactive:hover {
     color: #fff; }
   .grommetux-background-color-index--light .grommetux-title--interactive:hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-title--interactive:hover {
-    color: #0a64a0; }
+    color: #434343; }
 
 @media screen and (max-width: 44.9375em) {
   .grommetux-title--responsive svg,
@@ -9536,7 +9582,7 @@ section:not(.grommetux-section) {
   .grommetux-topology__path.grommetux-color-index-unset {
     stroke: #ddd; }
   .grommetux-topology__path.grommetux-color-index-brand {
-    stroke: #0a64a0; }
+    stroke: #434343; }
   .grommetux-topology__path.grommetux-color-index-critical {
     stroke: #FF856B; }
   .grommetux-topology__path.grommetux-color-index-error {
@@ -9569,13 +9615,15 @@ section:not(.grommetux-section) {
     stroke: #84b1cf; }
   .grommetux-topology__path.grommetux-color-index-accent-2, .grommetux-topology__path.grommetux-color-index-accent-4 {
     stroke: #614767; }
-  .grommetux-topology__path.grommetux-color-index-neutral-1, .grommetux-topology__path.grommetux-color-index-neutral-5 {
+  .grommetux-topology__path.grommetux-color-index-neutral-1, .grommetux-topology__path.grommetux-color-index-neutral-6 {
     stroke: #0a64a0; }
-  .grommetux-topology__path.grommetux-color-index-neutral-2, .grommetux-topology__path.grommetux-color-index-neutral-6 {
-    stroke: #5F7A76; }
-  .grommetux-topology__path.grommetux-color-index-neutral-3, .grommetux-topology__path.grommetux-color-index-neutral-7 {
+  .grommetux-topology__path.grommetux-color-index-neutral-2, .grommetux-topology__path.grommetux-color-index-neutral-7 {
+    stroke: #f6f6f6; }
+  .grommetux-topology__path.grommetux-color-index-neutral-3, .grommetux-topology__path.grommetux-color-index-neutral-8 {
+    stroke: #ffbf00; }
+  .grommetux-topology__path.grommetux-color-index-neutral-4, .grommetux-topology__path.grommetux-color-index-neutral-9 {
     stroke: #80746E; }
-  .grommetux-topology__path.grommetux-color-index-neutral-4, .grommetux-topology__path.grommetux-color-index-neutral-8 {
+  .grommetux-topology__path.grommetux-color-index-neutral-5, .grommetux-topology__path.grommetux-color-index-neutral-10 {
     stroke: #767676; }
   .grommetux-topology__path.grommetux-color-index-light-1, .grommetux-topology__path.grommetux-color-index-light-3 {
     stroke: #ffffff; }
@@ -9743,12 +9791,12 @@ section:not(.grommetux-section) {
 .grommetux-value__label {
   display: inline-block;
   margin-top: 6px;
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 1.26316; }
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
 
 .grommetux-value__value {
-  font-weight: 600; }
+  font-weight: 400; }
 
 .grommetux-value__units {
   margin-left: 0.5rem;
@@ -9793,9 +9841,9 @@ section:not(.grommetux-section) {
 
 .grommetux-value--large .grommetux-value__label {
   margin-top: 12px;
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1; }
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333; }
 
 .grommetux-value--align-center {
   justify-content: center; }
@@ -9813,9 +9861,9 @@ section:not(.grommetux-section) {
       margin-left: 12px; }
   .grommetux-value--xlarge .grommetux-value__label {
     margin-top: 12px;
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1; }
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.33333; }
   .grommetux-value--responsive.grommetux-value--large .grommetux-value__annotated, .grommetux-value--responsive.grommetux-value--xlarge .grommetux-value__annotated {
     font-size: 36px;
     font-size: 2.25rem;
@@ -9826,9 +9874,9 @@ section:not(.grommetux-section) {
       margin-left: 6px; }
   .grommetux-value--responsive.grommetux-value--large .grommetux-value__label, .grommetux-value--responsive.grommetux-value--xlarge .grommetux-value__label {
     margin-top: 6px;
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.26316; } }
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5; } }
 
 @media screen and (min-width: 45em) {
   .grommetux-value--xlarge .grommetux-value__annotated {
@@ -9914,8 +9962,8 @@ section:not(.grommetux-section) {
   object-fit: contain; }
 
 .grommetux-video__button:hover .grommetux-video__button__icon {
-  fill: #0a64a0;
-  stroke: #0a64a0; }
+  fill: #434343;
+  stroke: #434343; }
 
 @media screen and (max-width: 44.9375em) {
   .grommetux-video__timeline {
@@ -9955,7 +10003,7 @@ section:not(.grommetux-section) {
   background-color: rgba(51, 51, 51, 0.9);
   color: #fff; }
   .grommetux-video__controls-primary h3 {
-    font-weight: 600; }
+    font-weight: 400; }
 
 .grommetux-video__progress {
   position: absolute;
@@ -9994,7 +10042,7 @@ section:not(.grommetux-section) {
 .grommetux-video__progress-bar-fill {
   width: 100%;
   height: 100%;
-  background-color: #0a64a0;
+  background-color: #434343;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -10008,7 +10056,7 @@ section:not(.grommetux-section) {
     top: -6px;
     width: 24px;
     height: 24px;
-    background-color: #0a64a0;
+    background-color: #434343;
     border-radius: 48px;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
@@ -10097,9 +10145,9 @@ section:not(.grommetux-section) {
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5); }
   .grommetux-video--ended .grommetux-video__overlay .grommetux-form-field__contents input {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.26316;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
     color: rgba(255, 255, 255, 0.85);
     text-align: center; }
 
@@ -10218,7 +10266,7 @@ section:not(.grommetux-section) {
     stroke: #ddd; }
   .grommetux-world-map__continent.grommetux-color-index-brand,
   .grommetux-world-map__place.grommetux-color-index-brand {
-    stroke: #0a64a0; }
+    stroke: #434343; }
   .grommetux-world-map__continent.grommetux-color-index-critical,
   .grommetux-world-map__place.grommetux-color-index-critical {
     stroke: #FF856B; }
@@ -10277,21 +10325,25 @@ section:not(.grommetux-section) {
   .grommetux-world-map__place.grommetux-color-index-accent-2,
   .grommetux-world-map__place.grommetux-color-index-accent-4 {
     stroke: #614767; }
-  .grommetux-world-map__continent.grommetux-color-index-neutral-1, .grommetux-world-map__continent.grommetux-color-index-neutral-5,
+  .grommetux-world-map__continent.grommetux-color-index-neutral-1, .grommetux-world-map__continent.grommetux-color-index-neutral-6,
   .grommetux-world-map__place.grommetux-color-index-neutral-1,
-  .grommetux-world-map__place.grommetux-color-index-neutral-5 {
-    stroke: #0a64a0; }
-  .grommetux-world-map__continent.grommetux-color-index-neutral-2, .grommetux-world-map__continent.grommetux-color-index-neutral-6,
-  .grommetux-world-map__place.grommetux-color-index-neutral-2,
   .grommetux-world-map__place.grommetux-color-index-neutral-6 {
-    stroke: #5F7A76; }
-  .grommetux-world-map__continent.grommetux-color-index-neutral-3, .grommetux-world-map__continent.grommetux-color-index-neutral-7,
-  .grommetux-world-map__place.grommetux-color-index-neutral-3,
+    stroke: #0a64a0; }
+  .grommetux-world-map__continent.grommetux-color-index-neutral-2, .grommetux-world-map__continent.grommetux-color-index-neutral-7,
+  .grommetux-world-map__place.grommetux-color-index-neutral-2,
   .grommetux-world-map__place.grommetux-color-index-neutral-7 {
-    stroke: #80746E; }
-  .grommetux-world-map__continent.grommetux-color-index-neutral-4, .grommetux-world-map__continent.grommetux-color-index-neutral-8,
-  .grommetux-world-map__place.grommetux-color-index-neutral-4,
+    stroke: #f6f6f6; }
+  .grommetux-world-map__continent.grommetux-color-index-neutral-3, .grommetux-world-map__continent.grommetux-color-index-neutral-8,
+  .grommetux-world-map__place.grommetux-color-index-neutral-3,
   .grommetux-world-map__place.grommetux-color-index-neutral-8 {
+    stroke: #ffbf00; }
+  .grommetux-world-map__continent.grommetux-color-index-neutral-4, .grommetux-world-map__continent.grommetux-color-index-neutral-9,
+  .grommetux-world-map__place.grommetux-color-index-neutral-4,
+  .grommetux-world-map__place.grommetux-color-index-neutral-9 {
+    stroke: #80746E; }
+  .grommetux-world-map__continent.grommetux-color-index-neutral-5, .grommetux-world-map__continent.grommetux-color-index-neutral-10,
+  .grommetux-world-map__place.grommetux-color-index-neutral-5,
+  .grommetux-world-map__place.grommetux-color-index-neutral-10 {
     stroke: #767676; }
   .grommetux-world-map__continent.grommetux-color-index-light-1, .grommetux-world-map__continent.grommetux-color-index-light-3,
   .grommetux-world-map__place.grommetux-color-index-light-1,
@@ -10327,9 +10379,20 @@ body {
 .app-logo {
   display: flex; }
 
-.app-footer,
+.app-title,
+.header-title {
+  font-size: 20px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media screen and (max-width: 44.9375em) {
+    .app-title,
+    .header-title {
+      font-size: 19px !important; } }
+
 .app-header {
-  background: white; }
+  background-color: #fff !important;
+  box-shadow: 0.5px 0.9px 25px rgba(6, 6, 6, 0.1); }
 
 @media screen and (max-width: 44.9375em) {
   .app-header .grommetux-title {
@@ -10343,9 +10406,9 @@ body {
   .app-footer .footer-container {
     align-items: center !important; } }
 
-@media screen and (min-width: 45em) {
-  .content-container > div {
-    min-width: 960px; } }
+@media screen and (max-width: 44.9375em) {
+  .secondary {
+    align-items: center !important; } }
 
 @media screen and (min-width: 720px) and (max-width: 840px) {
   .content-container > div {
