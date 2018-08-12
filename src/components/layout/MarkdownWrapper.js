@@ -12,18 +12,15 @@ class MarkdownWrapper extends Component {
       <PageWrapper {...this.props}>
         <Box>
           <AppHeader />
-
-          <Section pad="small" align="center">
+          <Section pad="none" align="center">
             <Box
-              className="content-container"
-              size={{ width: { max: 'xxlarge' } }}
               direction="row"
               justify="start"
-              align="start"
-              pad={{ horizontal: 'large', between: 'small' }}
-              flex="grow"
-            >
-              {this.props.children}
+              size={{width: 'xxlarge'}}
+              pad={{horizontal: 'small', vertical: 'medium', between: 'large'}}>
+              <Box basis="2/3">
+                {this.props.children}
+              </Box>
             </Box>
           </Section>
           <AppFooter />

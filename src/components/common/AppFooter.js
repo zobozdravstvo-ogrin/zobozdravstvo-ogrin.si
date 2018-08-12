@@ -6,12 +6,14 @@ import settingsData from '@mapbox/batfish/data/settings-data';
 const AppFooter = ({ isCenter, ...rest }) => {
   return (
     <Footer
+      colorIndex="neutral-2"
       className="app-footer"
-      pad={{ vertical: 'small', horizontal: 'small', between: 'small' }}
+      pad={{ vertical: 'small', horizontal: 'medium', between: 'small' }}
       wrap={true}
       direction="row"
       justify="center"
       {...rest}
+      size="large"
     >
       <Box
         className="footer-container"
@@ -23,8 +25,14 @@ const AppFooter = ({ isCenter, ...rest }) => {
         pad={{ horizontal: 'none', between: 'small' }}
         flex="grow"
       >
-        <Box className="secondary" pad={{horizontal: 'medium'}}>
-          {settingsData.footer.copy} {settingsData.tel}
+        <Box
+          align="start"
+          className="secondary"
+          pad="none"
+          direction="row"
+        >
+          <Box pad="none">{settingsData.footer.copy}</Box>
+          <Box pad={{ horizontal: 'small' }}>{settingsData.tel}</Box>
         </Box>
         <Box
           direction="row"

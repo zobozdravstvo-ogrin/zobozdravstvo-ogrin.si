@@ -21,7 +21,8 @@ const AppHeader = props => {
     <Header
       className="app-header"
       justify="center"
-      pad={{ vertical: 'small', horizontal: 'small', between: 'small' }}
+      pad={{ horizontal: 'small', vertical: 'none' }}
+      fixed={true}
     >
       <Box
         size={{ width: { max: 'xxlarge' } }}
@@ -29,18 +30,28 @@ const AppHeader = props => {
         responsive={false}
         justify="between"
         align="center"
-        pad={{ horizontal: 'none', between: 'small' }}
+        pad="none"
         flex="grow"
       >
-        <Anchor className="app-logo" href="/" style={{ textDecoration: 'none' }}>
-          <Logo size="large" />
-          <Title responsive={true} truncate={true}>
-            {settingsData.short_title}
-          </Title>
+        <Anchor
+          className="app-logo"
+          href="/"
+          style={{ textDecoration: 'none' }}
+        >
+          <Logo size="medium" />
+          <div className="app-title">
+            <span>{settingsData.short_title}</span>
+          </div>
         </Anchor>
 
         <Box flex="grow" align="end">
-          <Menu label="Menu" inline={true} direction="row" flex="grow">
+          <Menu
+            // label=""
+            inline={true}
+            direction="row"
+            flex="grow"
+            size="small"
+          >
             {menuItems}
           </Menu>
         </Box>

@@ -69,7 +69,7 @@ class PageWrapper extends React.Component {
             color="#379bd4"
           />
           <link rel="shortcut icon" href={prefixUrl('/images/favicon.ico')} />
-
+          <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
           <meta
             name="apple-mobile-web-app-title"
             content={settingsData.site_title}
