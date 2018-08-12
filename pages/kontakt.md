@@ -3,7 +3,8 @@ layout: contact
 title: Kontakt
 description: Kontakt in lokacija
 prependJs:
-  - "import Iframe from 'react-iframe';"
+  - import Iframe from 'react-iframe';
+image: /images/uploads/ekipa.png
 ---
 
 ## Kontakt
