@@ -2,6 +2,7 @@
 layout: order
 title: Naročanje
 description: Naročanje
+image: /images/uploads/inspect.png
 ---
 
 ## Naročanje
