@@ -1,7 +1,11 @@
 ---
 layout: about
 title: Kdo smo
-description: O nas, kontakt in lokacija
+description: 'O nas, kontakt in lokacija'
+image: /images/uploads/ordinacija.png
+team:
+  - name: a
+    position: b
 ---
 
 ## Kdo smo
