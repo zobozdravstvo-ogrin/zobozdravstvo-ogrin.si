@@ -1,6 +1,32 @@
 {
   "site_title": "Zasebna zobna ordinacija M. Ogrin",
   "site_author": "MARIJA OGRIN - STOMATOLOGINJA",
+  "frontslideshow": {
+    "slide": [
+      {
+        "title": "Storitve",
+        "subtitle": "Storitve",
+        "link": "/storitve",
+        "image": "/images/uploads/ekipa2.png"
+      },
+      {
+        "title": "Ordinacija",
+        "subtitle": "",
+        "link": "/ordinacija",
+        "image": "/images/uploads/delo1.png"
+      },
+      {
+        "title": "Naročanje",
+        "link": "/narocanje",
+        "image": "/images/uploads/inspect.png"
+      },
+      {
+        "title": "Kontakt",
+        "link": " /kontakt",
+        "image": "/images/uploads/kako_deluje.png"
+      }
+    ]
+  },
   "header": {
     "links": [
       {
