@@ -2,7 +2,7 @@
 layout: services
 title: Storitve
 description: Opis nudenih storitev
-image: /images/uploads/kako_deluje.png
+image: /images/uploads/delo.png
 ---
 
 ## Storitve
