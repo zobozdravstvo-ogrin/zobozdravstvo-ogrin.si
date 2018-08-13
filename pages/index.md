@@ -17,6 +17,9 @@ sections:
 
         S prijaznim odnosom do vseh pacientov nudimo brezplačen pregled in
         svetovanje.
+    - keyname: infoheader
+      title: ZOBOZDRAVNIK
+      body: '***(+386) 01 750 24 92***'
 frontslideshow:
   slide:
     - link: /storitve
