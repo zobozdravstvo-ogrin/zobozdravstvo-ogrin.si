@@ -39,7 +39,10 @@
     "react-helmet": "^5.2.0",
     "react-iframe": "^1.1.0",
     "react-image-gallery": "^0.8.10",
+    "react-images": "^0.5.19",
+    "react-measure": "^2.1.0",
     "react-photo-gallery": "^6.1.6",
+    "remark-preset-davidtheclark": "^0.8.1",
     "rss": "^1.2.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2"

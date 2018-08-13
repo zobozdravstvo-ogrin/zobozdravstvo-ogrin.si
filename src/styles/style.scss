@@ -87,6 +87,23 @@ body {
   }
 }
 
+.team-section {
+  background-color: #fafafa;
+}
+
+.team-image-container img {
+  border-radius: 140px;
+}
+
+.team-heading {
+  font-weight: 400;
+  color: #333;
+}
+
+.team-desc-container {
+  color: #777;
+}
+
 .content-container > div {
   @media screen and (min-width: 720px) and (max-width: 840px) {
     min-width: 750px;

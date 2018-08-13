@@ -2,7 +2,9 @@ import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Box from 'grommet/components/Box';
 import Section from 'grommet/components/Section';
+import settingsData from '@mapbox/batfish/data/settings-data';
 import ImageHeader from '../common/ImageHeader';
+import InsertMarkdown from '../common/InsertMarkdown';
 
 class DefaultPageLayout extends Component {
   render() {
@@ -23,8 +25,11 @@ class DefaultPageLayout extends Component {
             justify="start"
             size={{width: 'xxlarge'}}
             pad={{horizontal: 'small', vertical: 'medium', between: 'large'}}>
-            <Box basis="full">
+            <Box basis="2/3" pad={{ horizontal: 'small', vertical: 'medium' }}>
               {this.props.children}
+            </Box>
+            <Box basis="1/3" pad={{ horizontal: 'small', vertical: 'medium' }}>
+              <InsertMarkdown body={settingsData.contact} nlToBr={true} />
             </Box>
           </Box>
         </Section>

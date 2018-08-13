@@ -20,6 +20,8 @@ ContentSection.propTypes = {
   render: PropTypes.func
 };
 
-ContentSection.defaultProps = {};
+ContentSection.defaultProps = {
+  sections: []
+};
 
 export default ContentSection;

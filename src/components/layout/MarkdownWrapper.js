@@ -6,6 +6,7 @@ import AppHeader from '../common/AppHeader';
 import AppFooter from '../common/AppFooter';
 import DefaultPageLayout from './DefaultPageLayout';
 import FrontPageLayout from './FrontPageLayout';
+import ContactLayout from './ContactLayout';
 
 class MarkdownWrapper extends Component {
   render() {
@@ -14,6 +15,12 @@ class MarkdownWrapper extends Component {
     switch (frontMatter.layout) {
       case 'homepage':
         layout = <FrontPageLayout {...this.props} />;
+        break;
+      case 'contact':
+        layout = <ContactLayout {...this.props} />;
+        break;
+      case 'about':
+        layout = <ContactLayout {...this.props} />;
         break;
       default:
         layout = <DefaultPageLayout {...this.props} />;

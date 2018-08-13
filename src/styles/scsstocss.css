@@ -10762,6 +10762,19 @@ body {
 .info-header .body-container em {
   font-weight: 600 !important; }
 
+.team-section {
+  background-color: #fafafa; }
+
+.team-image-container img {
+  border-radius: 140px; }
+
+.team-heading {
+  font-weight: 400;
+  color: #333; }
+
+.team-desc-container {
+  color: #777; }
+
 @media screen and (min-width: 720px) and (max-width: 840px) {
   .content-container > div {
     min-width: 750px; } }
