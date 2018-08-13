@@ -26,9 +26,9 @@ gallery:
     src: /images/uploads/an3_0821.png
     width: '800'
   - alt: Ordinacija
-    height: '546'
+    height: '800'
     src: /images/uploads/an3_0771.png
-    width: '800'
+    width: '549'
 ---
 Kdaj z otrokom prvič k zobozdravniku?
 
