@@ -129,6 +129,18 @@ collections:
             - {label: "Content", name: "body", widget: "markdown"}
             - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Cover Image", name: "image", widget: "image", required: false}
+          - label: "Slideshow"
+            name: slideshow
+            widget: "object"
+            fields:
+            - label: "Slide"
+              name: "slide"
+              widget: "list"
+              fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Link", name: "link", widget: "string"}
+              - {label: "Image", name: "image", widget: "image", required: true}
       - name: "storitve"
         label: "Storitve"
         description: "Informacije o storitvah"
