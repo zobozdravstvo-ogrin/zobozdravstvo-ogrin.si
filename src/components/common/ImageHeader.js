@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Box from 'grommet/components/Box';
-import Image from 'grommet/components/Image';
+// import Image from 'grommet/components/Image';
 
 class ImageHeader extends Component {
   render() {
     const { src, alt, ...rest } = this.props;
     return (
       <div className="header-image-container">
-        <Image className="image-header-image" full size="large" src={src} alt={alt} {...rest} />
+        <img className="image-header-image" src={src} alt={alt} {...rest} />
       </div>
     );
   }
