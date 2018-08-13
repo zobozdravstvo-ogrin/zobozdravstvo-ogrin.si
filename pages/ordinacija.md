@@ -32,7 +32,13 @@ section:
       Naziv: OGRIN MARIJA - STOMATOLOGINJA\
       Davčna št.: 24647764\
       Matična št.: 1376527000
-image: /images/uploads/ordinacija.png
+image: ''
+slideshow:
+  slide:
+    - title: Ordinacija
+      image: /images/uploads/ekipa.png
+    - title: Ordinacija
+      image: /images/uploads/ordinacija.png
 ---
 {{
 <Iframe
