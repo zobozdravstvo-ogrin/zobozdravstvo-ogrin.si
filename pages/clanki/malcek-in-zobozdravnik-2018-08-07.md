@@ -29,6 +29,10 @@ gallery:
     height: '800'
     src: /images/uploads/an3_0771.png
     width: '549'
+  - alt: Zob
+    height: '533'
+    src: /images/uploads/an3_0828.png
+    width: '800'
 ---
 Kdaj z otrokom prvič k zobozdravniku?
 
