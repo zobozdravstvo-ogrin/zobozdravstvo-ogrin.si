@@ -10,11 +10,21 @@ const AppFooter = ({ isCenter, ...rest }) => {
       className="app-footer"
       pad={{ vertical: 'small', horizontal: 'medium', between: 'small' }}
       wrap={true}
-      direction="row"
+      direction="column"
       justify="center"
       {...rest}
       size="large"
     >
+      {
+        settingsData.footer.headline && (
+          <Box>{settingsData.footer.headline}</Box>
+        )
+      }
+      {
+        settingsData.footer.body && (
+          <Box>{settingsData.footer.body}</Box>
+        )
+      }
       <Box
         className="footer-container"
         size={{ width: { max: 'xxlarge' } }}
