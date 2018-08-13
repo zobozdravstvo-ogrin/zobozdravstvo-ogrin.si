@@ -102,8 +102,8 @@ collections:
             widget: "list"
             fields:
             - {label: "Title", name: "alt", widget: "string"}
-            - {label: "Width", name: "width", widget: "number"}
-            - {label: "Height", name: "height", widget: "number"}
+            - {label: "Width", name: "width", widget: number}
+            - {label: "Height", name: "height", widget: number}
             - {label: "Image", name: "src", widget: "image", required: false}
       - name: "ordinacija"
         label: "Kdo smo"
