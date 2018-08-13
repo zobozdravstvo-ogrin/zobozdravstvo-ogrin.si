@@ -22,10 +22,14 @@ class ContactLayout extends Component {
           </Section>
         )}
         <Section pad="none" align="center">
-          <Slideshow
-            className="slideshow"
-            slides={frontMatter.slideshow.slide}
-          />
+          {
+            frontMatter.slideshow && (
+              <Slideshow
+                className="slideshow"
+                slides={frontMatter.slideshow.slide}
+              />
+            )
+          }
         </Section>
         <Section pad="none" align="center">
           <Box
