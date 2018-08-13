@@ -4,8 +4,9 @@ title: Kdo smo
 description: 'O nas, kontakt in lokacija'
 image: /images/uploads/ordinacija.png
 team:
-  - name: a
-    position: b
+  - author: Aljaž Ogrin
+  - author: Marija Ogrin
+  - author: Irena Bogataj
 ---
 
 ## Kdo smo
