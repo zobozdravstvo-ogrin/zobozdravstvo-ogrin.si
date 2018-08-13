@@ -34,8 +34,6 @@ gallery:
     src: /images/uploads/an3_0828.png
     width: '800'
 ---
-Kdaj z otrokom prvič k zobozdravniku?
-
 Zobozdravnik vam pri prvem obisku svetuje o skrbi za oralno zdravje vašega otroka in pokaže ter razloži tehnike oralne higiene. Predstavi tudi pozitivne učinke preparatov s fluoridi, pomen pravilne prehrane ter pomembnost pogostih preventivnih pregledov, pogovorite pa se tudi o morebitnih zdravstvenih težavah, ki bi lahko vplivale na zdravje ust. Z enostavnim pregledom vašega malčka tudi pregleda, predvsem zunanje značilnosti razvoja obraza, seveda pa pogleda tudi zobke.
 
 Zelo pomemben je odnos staršev do zobozdravnika. Otrok pred prvim obiskom nima svojega mnenja o zobozdravniku, temveč si ga oblikuje ob poslušanju in opazovanju starejših. Če starši otroka z zobozdravnikom strašijo, ali o obisku ordinacije govorijo celo kot o kazni za porednost, to zelo neugodno vpliva na otrokovo sodelovanje v ordinaciji ter le povečuje strah ob obisku zobozdravnika. Starši lahko s temeljito in pravočasno pripravo otroka pred obiskom precej pripomorete k boljšemu sodelovanju otroka ob obisku. K temu lahko pristopite tudi tako, da si v knjižnici izposodite kakšno otroško slikanico na temo obiska pri zobozdravniku, jo skupaj z malčkom preberete in se ob njej pogovorite.
