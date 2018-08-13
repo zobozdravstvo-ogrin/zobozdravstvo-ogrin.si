@@ -222,6 +222,7 @@ collections:
           - {label: "Site author url", name: "site_author_url", widget: "string"}
           - {label: "Email", name: "email", widget: "string"}
           - {label: "Telephone", name: "tel", widget: "string"}
+          - {label: "Team title", name: "team_title", widget: "string"}
           - label: "Team"
             name: "team"
             widget: "list"
