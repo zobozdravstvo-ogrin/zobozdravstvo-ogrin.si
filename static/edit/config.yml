@@ -86,9 +86,13 @@ collections:
             name: team
             widget: "list"
             fields:
-              - {label: "Name", name: name, widget: string}
-              - {label: "Position", name: position, widget: string}
-              - {label: "Photo", name: photo, widget: image, required: false}
+              - label: "Avtor objave"
+                name: "author"
+                widget: "relation"
+                collection: "authors"
+                searchFields: ["title"]
+                valueField: "title"
+                displayFields: ["title"]
       - name: "storitve"
         label: "Storitve"
         description: "Informacije o storitvah"
