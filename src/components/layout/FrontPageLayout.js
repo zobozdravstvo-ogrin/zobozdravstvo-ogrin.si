@@ -37,7 +37,7 @@ class FrontPageLayout extends Component {
             direction="row"
             justify="start"
             size={{ width: 'xxlarge' }}
-            pad={{ horizontal: 'small', vertical: 'medium', between: 'large' }}
+            pad={{ horizontal: 'small', vertical: 'large', between: 'large' }}
           >
             <Box basis="2/3">
               <ContentSection

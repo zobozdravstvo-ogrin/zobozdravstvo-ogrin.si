@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Box from 'grommet/components/Box';
-// import Image from 'grommet/components/Image';
 
 class ImageHeader extends Component {
   render() {
