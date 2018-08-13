@@ -16,7 +16,19 @@ description: >-
 date: '2018-08-07T13:55:51+02:00'
 published: true
 image: /images/uploads/inspect.png
-galleryImages: []
+gallery:
+  - alt: Ordinacija
+    height: '533'
+    src: /images/uploads/an3_0729.png
+    width: '800'
+  - alt: Ordinacija
+    height: '533'
+    src: /images/uploads/an3_0821.png
+    width: '800'
+  - alt: Ordinacija
+    height: '546'
+    src: /images/uploads/an3_0771.png
+    width: '800'
 ---
 Kdaj z otrokom prvič k zobozdravniku?
 
