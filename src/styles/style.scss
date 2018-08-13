@@ -1,5 +1,6 @@
-@import "variables";
-@import "~grommet/scss/grommet-core/index";
+@import 'variables';
+@import '~grommet/scss/grommet-core/index';
+@import 'node_modules/react-image-gallery/styles/scss/image-gallery.scss';
 
 // "overscroll fix"
 html {
@@ -11,7 +12,6 @@ body {
   height: 100%;
   overflow: auto;
 }
-
 
 .app-logo {
   display: flex;
@@ -31,7 +31,7 @@ body {
 
 .app-header {
   background-color: #fff !important;
-  box-shadow: 0.5px 0.9px 25px rgba(6,6,6,0.1);
+  box-shadow: 0.5px 0.9px 25px rgba(6, 6, 6, 0.1);
 }
 
 .app-header {
@@ -60,13 +60,62 @@ body {
   }
 }
 
-.content-container > div {
-  //@include media-query(lap-and-up) {
-  //  min-width: 960px;
-  //}
+.body-container > div:first-child p {
+  margin-top: 0 !important;
+}
 
+.slideshow {
+  width: 100%;
+}
+
+.header-image-container,
+.image-header-image {
+  width: 100% !important;
+}
+
+.info-header {
+  h2 {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .body-container p {
+    margin: 0 !important;
+  }
+
+  .body-container em {
+    font-weight: 600 !important;
+  }
+}
+
+.content-container > div {
   @media screen and (min-width: 720px) and (max-width: 840px) {
     min-width: 750px;
   }
 }
 
+// GROMMET
+.grommet
+  button.image-gallery-bullet:not(.grommetux-button):not(.grommetux-button--box) {
+  min-width: initial;
+  padding: 6px 6px;
+  border: 1px #fefefe solid;
+  border-radius: 10px;
+  box-shadow: 0 0 0 transparent;
+}
+
+.grommet
+  button.image-gallery-left-nav:not(.grommetux-button):not(.grommetux-button--box),
+.grommet
+  button.image-gallery-right-nav:not(.grommetux-button):not(.grommetux-button--box) {
+  margin: 20px;
+  line-height: inherit !important;
+  min-width: initial;
+  padding: 13px 15px;
+  border: 1px #fefefe solid;
+  border-radius: 30px;
+  box-shadow: 0 0 0 transparent;
+
+  &::before {
+    text-shadow: 0 1px 1px #999999;
+  }
+}

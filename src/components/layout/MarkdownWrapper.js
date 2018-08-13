@@ -4,25 +4,26 @@ import Box from 'grommet/components/Box';
 import PageWrapper from './PageWrapper';
 import AppHeader from '../common/AppHeader';
 import AppFooter from '../common/AppFooter';
-import Section from 'grommet/components/Section';
+import DefaultPageLayout from './DefaultPageLayout';
+import FrontPageLayout from './FrontPageLayout';
 
 class MarkdownWrapper extends Component {
   render() {
+    const { frontMatter } = this.props;
+    let layout = null;
+    switch (frontMatter.layout) {
+      case 'homepage':
+        layout = <FrontPageLayout {...this.props} />;
+        break;
+      default:
+        layout = <DefaultPageLayout {...this.props} />;
+    }
+
     return (
       <PageWrapper {...this.props}>
         <Box>
           <AppHeader />
-          <Section pad="none" align="center">
-            <Box
-              direction="row"
-              justify="start"
-              size={{width: 'xxlarge'}}
-              pad={{horizontal: 'small', vertical: 'medium', between: 'large'}}>
-              <Box basis="2/3">
-                {this.props.children}
-              </Box>
-            </Box>
-          </Section>
+          {layout}
           <AppFooter />
         </Box>
       </PageWrapper>
