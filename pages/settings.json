@@ -9,12 +9,12 @@
         "link": "/storitve"
       },
       {
-        "name": "Ordinacija",
-        "link": "/ordinacija"
-      },
-      {
         "name": "Naročanje",
         "link": "/narocanje"
+      },
+      {
+        "name": "Ordinacija",
+        "link": "/ordinacija"
       }
     ]
   },
@@ -34,12 +34,12 @@
         "link": "/storitve"
       },
       {
-        "name": "Ordinacija",
-        "link": "/ordinacija"
-      },
-      {
         "name": "Naročanje",
         "link": "/narocanje"
+      },
+      {
+        "name": "Ordinacija",
+        "link": "/ordinacija"
       }
     ]
   },
