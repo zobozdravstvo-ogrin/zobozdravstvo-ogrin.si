@@ -17,27 +17,31 @@ class index extends Component {
     const { frontMatter } = this.props;
     console.log(articles);
 
-    const articlesEl = articles.map(article => {
-      if (!article.frontMatter.author) {
-        return null;
-      }
+    const articlesEl = articles
+      .filter(item => {
+        return item.frontMatter.published;
+      })
+      .map(article => {
+        if (!article.frontMatter.author) {
+          return null;
+        }
 
-      const content = article.frontMatter;
+        const content = article.frontMatter;
 
-      return (
-        <ArticleCard
-          key={content.title}
-          pad={{ horizontal: 'none' }}
-          heading={content.title}
-          description={content.sub_title}
-          thumbnail={content.image}
-          author={content.author}
-          date={content.date}
-          link={article.path}
-          basis="1/3"
-        />
-      );
-    });
+        return (
+          <ArticleCard
+            key={content.title}
+            pad={{ horizontal: 'none' }}
+            heading={content.title}
+            description={content.sub_title}
+            thumbnail={content.image}
+            author={content.author}
+            date={content.date}
+            link={article.path}
+            basis="1/3"
+          />
+        );
+      });
 
     return (
       <PageWrapper {...this.props}>
@@ -48,10 +52,14 @@ class index extends Component {
               direction="row"
               justify="start"
               size={{ width: 'xxlarge' }}
-              pad={{ horizontal: 'small', vertical: 'small', between: 'large' }}
+              pad={{
+                horizontal: 'small',
+                vertical: 'medium',
+                between: 'large'
+              }}
             >
               <Box pad="none" direction="column">
-                <h1>{frontMatter.title}</h1>
+                <h2>{frontMatter.title}</h2>
                 <Box
                   direction="row"
                   basis="full"
