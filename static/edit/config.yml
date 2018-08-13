@@ -69,10 +69,11 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden", default: "homepage"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
-          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Content", name: "body", widget: "markdown", required: false}
           - {label: "Cover Image", name: "image", widget: "image", required: false}
           - label: "Sections"
             name: sections
+            required: false
             widget: "object"
             fields:
             - label: "Section"
@@ -104,9 +105,10 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden", default: "about"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
-          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Content", name: "body", widget: "markdown", required: false}
           - label: "Section"
             name: "section"
+            required: false
             widget: "list"
             fields:
             - {label: "Title", name: "title", widget: "string"}
@@ -134,9 +136,10 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden", default: "services"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
-          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Content", name: "body", widget: "markdown", required: false}
           - label: "Section"
             name: "section"
+            required: false
             widget: "list"
             fields:
             - {label: "Title", name: "title", widget: "string"}
@@ -153,9 +156,10 @@ collections:
           - {label: "Layout", name: "layout", widget: "hidden", default: "order"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
-          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Content", name: "body", widget: "markdown", required: false}
           - label: "Section"
             name: "section"
+            required: false
             widget: "list"
             fields:
             - {label: "Title", name: "title", widget: "string"}
@@ -176,9 +180,10 @@ collections:
             name: "prependJs"
             allow_add: true
             widget: "list"
-          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Content", name: "body", widget: "markdown", required: false}
           - label: "Section"
             name: "section"
+            required: false
             widget: "list"
             fields:
             - {label: "Title", name: "title", widget: "string"}
