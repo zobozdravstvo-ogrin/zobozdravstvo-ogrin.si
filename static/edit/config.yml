@@ -232,7 +232,7 @@ collections:
                 collection: "authors"
                 searchFields: ["title"]
                 valueField: "title"
-                displayFields: ["title"]
+                displayFields: ["title", "description", "body", "author_image"]
           - {label: "Contact", name: "contact", widget: "markdown"}
           - label: "Post Settings"
             name: posts
