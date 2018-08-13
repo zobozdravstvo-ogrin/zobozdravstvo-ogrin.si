@@ -71,6 +71,30 @@ collections:
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Content", name: "body", widget: "markdown"}
           - {label: "Cover Image", name: "image", widget: "image", required: false}
+          - label: "Sections"
+            name: sections
+            widget: "object"
+            fields:
+            - label: "Section"
+              name: "section"
+              widget: "list"
+              fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "KeyName", name: "keyname", widget: "string"}
+              - {label: "Content", name: "body", widget: "markdown"}
+              - {label: "Image", name: "image", widget: "image", required: false}
+          - label: "Front slideshow"
+            name: frontslideshow
+            widget: "object"
+            fields:
+            - label: "Slide"
+              name: "slide"
+              widget: "list"
+              fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Link", name: "link", widget: "string"}
+              - {label: "Image", name: "image", widget: "image", required: true}
       - name: "ordinacija"
         label: "Kdo smo"
         description: "Kdo smo"
@@ -81,6 +105,14 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Content", name: "body", widget: "markdown"}
+          - label: "Section"
+            name: "section"
+            widget: "list"
+            fields:
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "KeyName", name: "keyname", widget: "string"}
+            - {label: "Content", name: "body", widget: "markdown"}
+            - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Cover Image", name: "image", widget: "image", required: false}
           - label: "Team"
             name: team
@@ -103,6 +135,14 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Content", name: "body", widget: "markdown"}
+          - label: "Section"
+            name: "section"
+            widget: "list"
+            fields:
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "KeyName", name: "keyname", widget: "string"}
+            - {label: "Content", name: "body", widget: "markdown"}
+            - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Cover Image", name: "image", widget: "image", required: false}
       - name: "narocanje"
         label: "Naročanje"
@@ -114,6 +154,14 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Content", name: "body", widget: "markdown"}
+          - label: "Section"
+            name: "section"
+            widget: "list"
+            fields:
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "KeyName", name: "keyname", widget: "string"}
+            - {label: "Content", name: "body", widget: "markdown"}
+            - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Cover Image", name: "image", widget: "image", required: false}
       - name: "kontakt"
         label: "Kontakt"
@@ -129,6 +177,14 @@ collections:
             allow_add: true
             widget: "list"
           - {label: "Content", name: "body", widget: "markdown"}
+          - label: "Section"
+            name: "section"
+            widget: "list"
+            fields:
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "KeyName", name: "keyname", widget: "string"}
+            - {label: "Content", name: "body", widget: "markdown"}
+            - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Cover Image", name: "image", widget: "image", required: false}
 
   - name: "settings"
