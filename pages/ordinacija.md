@@ -3,10 +3,7 @@ layout: about
 title: Kdo smo
 description: 'O nas, kontakt in lokacija'
 image: /images/uploads/ordinacija.png
-team:
-  - author: Aljaž Ogrin
-  - author: Marija Ogrin
-  - author: Irena Bogataj
+team: []
 ---
 
 ## Kdo smo
@@ -17,10 +14,3 @@ S prijaznim odnosom do vseh pacientov nudimo brezplačen pregled in svetovanje.
 ## Kje nas najdete
 Ordinacija deluje v Osnovni šoli Anton Martin Slomšek na Vrhniki.
 V bližnini se nahaja tudi prostorno parkirišče.
-
-## Kontakt
-***Zasebna zobna ordinacija M. Ogrin***\
-Pod Hruševco 33\
-1360 Vrhnika\
-(+386) 01 750 24 92\
-[Zemlevid](https://goo.gl/maps/pwjRHLC66mt)
