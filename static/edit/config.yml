@@ -218,7 +218,7 @@ collections:
           - {label: "Email", name: "email", widget: "string"}
           - {label: "Telephone", name: "tel", widget: "string"}
           - label: "Team"
-              name: team
+              name: "teamlist"
               widget: "list"
               fields:
               - label: "Avtor objave"
