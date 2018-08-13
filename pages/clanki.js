@@ -6,17 +6,65 @@ description: Seznam člankov
 import PageWrapper from '../src/components/layout/PageWrapper';
 import React, { Component } from 'react';
 import Box from 'grommet/components/Box';
+import Section from 'grommet/components/Section';
+import articles from '@mapbox/batfish/data/articles';
 import AppHeader from '../src/components/common/AppHeader';
 import AppFooter from '../src/components/common/AppFooter';
+import ArticleCard from '../src/components/common/ArticleCard';
 
 class index extends Component {
   render() {
+    const { frontMatter } = this.props;
+    console.log(articles);
+
+    const articlesEl = articles.map(article => {
+      if (!article.frontMatter.author) {
+        return null;
+      }
+
+      const content = article.frontMatter;
+
+      return (
+        <ArticleCard
+          key={content.title}
+          pad={{ horizontal: 'none' }}
+          heading={content.title}
+          description={content.sub_title}
+          thumbnail={content.image}
+          author={content.author}
+          date={content.date}
+          link={article.path}
+          basis="1/3"
+        />
+      );
+    });
+
     return (
       <PageWrapper {...this.props}>
         <Box>
           <AppHeader />
-          Seznam člankov
-          <AppFooter float={false} pad="none" />
+          <Section pad="none" align="center">
+            <Box
+              direction="row"
+              justify="start"
+              size={{ width: 'xxlarge' }}
+              pad={{ horizontal: 'small', vertical: 'small', between: 'large' }}
+            >
+              <Box pad="none" direction="column">
+                <h1>{frontMatter.title}</h1>
+                <Box
+                  direction="row"
+                  basis="full"
+                  justify="start"
+                  pad="none"
+                  responsive={true}
+                >
+                  {articlesEl}
+                </Box>
+              </Box>
+            </Box>
+          </Section>
+          <AppFooter />
         </Box>
       </PageWrapper>
     );

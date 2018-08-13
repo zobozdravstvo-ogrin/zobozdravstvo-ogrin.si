@@ -7,6 +7,7 @@ import AppFooter from '../common/AppFooter';
 import DefaultPageLayout from './DefaultPageLayout';
 import FrontPageLayout from './FrontPageLayout';
 import ContactLayout from './ContactLayout';
+import ArticleLayout from './ArticleLayout';
 
 class MarkdownWrapper extends Component {
   render() {
@@ -21,6 +22,9 @@ class MarkdownWrapper extends Component {
         break;
       case 'about':
         layout = <ContactLayout {...this.props} />;
+        break;
+      case 'article':
+        layout = <ArticleLayout {...this.props} />;
         break;
       default:
         layout = <DefaultPageLayout {...this.props} />;
