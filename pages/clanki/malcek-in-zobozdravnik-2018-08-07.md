@@ -15,6 +15,8 @@ description: >-
   takšen obisk namenjen predvsem vam, njegovim staršem. 
 date: '2018-08-07T13:55:51+02:00'
 published: true
+image: /images/uploads/inspect.png
+galleryImages: []
 ---
 Kdaj z otrokom prvič k zobozdravniku?
 
