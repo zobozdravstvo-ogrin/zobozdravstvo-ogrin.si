@@ -217,6 +217,18 @@ collections:
           - {label: "Site author url", name: "site_author_url", widget: "string"}
           - {label: "Email", name: "email", widget: "string"}
           - {label: "Telephone", name: "tel", widget: "string"}
+          - label: "Team"
+              name: team
+              widget: "list"
+              fields:
+              - label: "Avtor objave"
+                name: "author"
+                widget: "relation"
+                collection: "authors"
+                searchFields: ["title"]
+                valueField: "title"
+                displayFields: ["title"]
+          - {label: "Contact", name: "contact", widget: "markdown"}
           - label: "Post Settings"
             name: posts
             widget: "object"
