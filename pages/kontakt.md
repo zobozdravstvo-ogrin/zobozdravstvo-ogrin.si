@@ -5,15 +5,6 @@ description: Kontakt in lokacija
 prependJs:
   - import Iframe from 'react-iframe';
 section:
-  - keyname: contact
-    title: Kontakt
-    body: |-
-      ## Kontakt
-      **_Zasebna zobna ordinacija M. Ogrin_**\
-      Pod Hruševco 33\
-      1360 Vrhnika\
-      (+386) 01 750 24 92\
-      [Google Zemlevid](https://goo.gl/maps/pwjRHLC66mt)
   - keyname: company
     title: Podjetje
     body: |-
