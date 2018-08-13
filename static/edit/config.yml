@@ -49,14 +49,16 @@ collections:
       - {label: "Vsebina", name: "body", widget: "markdown"}
       - {label: "Datum objave", name: "date", widget: "datetime"}
       - {label: "Objavljeno", name: "published", widget: "boolean", default: true}
-      - {label: "Naslovna fotografija", name: "image", widget: "image", required: false}
-      - label: "Galerija"
-        name: "galleryImages"
+      - {label: "Naslovna fotografija", name: "image", widget: "image", required: true}
+      - label: "Gallery"
+        name: "gallery"
         required: false
         widget: "list"
         fields:
-          - {label: "Image", name: "image", widget: "image"}
-
+        - {label: "Title", name: "alt", widget: "string"}
+        - {label: "Width", name: "width", widget: number}
+        - {label: "Height", name: "height", widget: number}
+        - {label: "Image", name: "src", widget: "image", required: false}
   - name: "pages"
     label: "Pages"
     files:
