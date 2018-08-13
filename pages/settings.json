@@ -15,6 +15,10 @@
       {
         "name": "Ordinacija",
         "link": "/ordinacija"
+      },
+      {
+        "name": "Članki",
+        "link": "/clanki"
       }
     ]
   },
@@ -41,6 +45,10 @@
       {
         "name": "Ordinacija",
         "link": "/ordinacija"
+      },
+      {
+        "name": "Članki",
+        "link": "/clanki"
       }
     ]
   },
