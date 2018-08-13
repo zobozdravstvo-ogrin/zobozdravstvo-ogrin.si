@@ -35,5 +35,22 @@ frontslideshow:
     - link: ' /kontakt'
       title: Kontakt
       image: /images/uploads/kako_deluje.png
+gallery:
+  - alt: Ordinacija
+    height: '533'
+    src: /images/uploads/an3_0729.png
+    width: '800'
+  - alt: Delo
+    height: '800'
+    src: /images/uploads/an3_0771.png
+    width: '533'
+  - alt: Pacient
+    height: '533'
+    src: /images/uploads/an3_0821.png
+    width: '800'
+  - alt: Zob
+    height: '533'
+    src: /images/uploads/an3_0828.png
+    width: '800'
 ---
 HIDE_CONTENT
