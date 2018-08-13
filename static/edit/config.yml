@@ -155,7 +155,7 @@ collections:
             - {label: "KeyName", name: "keyname", widget: "string"}
             - {label: "Content", name: "body", widget: "markdown"}
             - {label: "Image", name: "image", widget: "image", required: false}
-            - {label: "Cover Image", name: "image", widget: "image", required: false}
+          - {label: "Cover Image", name: "image", widget: "image", required: false}
       - name: "narocanje"
         label: "Naročanje"
         description: "Informacije o naročanju"
@@ -175,7 +175,7 @@ collections:
             - {label: "KeyName", name: "keyname", widget: "string"}
             - {label: "Content", name: "body", widget: "markdown"}
             - {label: "Image", name: "image", widget: "image", required: false}
-            - {label: "Cover Image", name: "image", widget: "image", required: false}
+          - {label: "Cover Image", name: "image", widget: "image", required: false}
       - name: "kontakt"
         label: "Kontakt"
         description: "Kontakt in lokacija"
@@ -199,8 +199,7 @@ collections:
             - {label: "KeyName", name: "keyname", widget: "string"}
             - {label: "Content", name: "body", widget: "markdown"}
             - {label: "Image", name: "image", widget: "image", required: false}
-            - {label: "Cover Image", name: "image", widget: "image", required: false}
-
+          - {label: "Cover Image", name: "image", widget: "image", required: false}
   - name: "settings"
     label: "Settings"
     delete: false
