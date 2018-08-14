@@ -32,6 +32,13 @@ body {
 .app-header {
   background-color: #fff !important;
   box-shadow: 0.5px 0.9px 25px rgba(6, 6, 6, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.app-container {
+  margin-top: 72px
 }
 
 .app-header {
@@ -68,8 +75,12 @@ body {
   width: 100%;
 }
 
-.header-image-container,
 .image-header-image {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.header-image-container {
   width: 100% !important;
 }
 

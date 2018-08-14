@@ -22,7 +22,6 @@ const AppHeader = props => {
       className="app-header"
       justify="center"
       pad={{ horizontal: 'small', vertical: 'none' }}
-      fixed={true}
     >
       <Box
         size={{ width: { max: 'xxlarge' } }}

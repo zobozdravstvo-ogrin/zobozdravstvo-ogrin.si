@@ -32,7 +32,7 @@ class MarkdownWrapper extends Component {
 
     return (
       <PageWrapper {...this.props}>
-        <Box>
+        <Box className="app-container">
           <AppHeader />
           {layout}
           <AppFooter />

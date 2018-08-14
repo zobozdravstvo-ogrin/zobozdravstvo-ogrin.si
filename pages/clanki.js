@@ -45,7 +45,7 @@ class index extends Component {
 
     return (
       <PageWrapper {...this.props}>
-        <Box>
+        <Box className="app-container">
           <AppHeader />
           <Section pad="none" align="center">
             <Box
