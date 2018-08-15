@@ -4,15 +4,8 @@ language: sl
 author: Aljaž Ogrin
 title: Malček in zobozdravnik
 sub_title: Kdaj z otrokom prvič h zobozdravniku
-description: >-
-
-  Pedontologa (otroškega zobozdravnika) naj bi malček prvič obiskal med prvim in
-  drugim letom starosti, vsekakor pa pred potrebo po obisku zaradi dejanskih
-  zobozdravstvenih posegov. Zobozdravstvena ordinacija ni ravno prijetno okolje
-  za malčka - novi ljudje v nevsakdanjih oblekah, naprave, ki ne izgledajo kot
-  najbolj vabljive igračke, vse pa spremljajo še neprijetni zvoki - zato je
-  dobro, če se otrok z njimi spozna postopoma ter dovolj zgodaj. Seveda pa je
-  takšen obisk namenjen predvsem vam, njegovim staršem. 
+description: |
+  otrok in zobozdravnik
 date: '2018-08-07T13:55:51+02:00'
 published: true
 image: /images/uploads/inspect.png
@@ -34,6 +27,8 @@ gallery:
     src: /images/uploads/an3_0828.png
     width: '800'
 ---
+Pedontologa (otroškega zobozdravnika) naj bi malček prvič obiskal med prvim in drugim letom starosti, vsekakor pa pred potrebo po obisku zaradi dejanskih zobozdravstvenih posegov. Zobozdravstvena ordinacija ni ravno prijetno okolje za malčka - novi ljudje v nevsakdanjih oblekah, naprave, ki ne izgledajo kot najbolj vabljive igračke, vse pa spremljajo še neprijetni zvoki - zato je dobro, če se otrok z njimi spozna postopoma ter dovolj zgodaj. Seveda pa je takšen obisk namenjen predvsem vam, njegovim staršem. 
+
 Zobozdravnik vam pri prvem obisku svetuje o skrbi za oralno zdravje vašega otroka in pokaže ter razloži tehnike oralne higiene. Predstavi tudi pozitivne učinke preparatov s fluoridi, pomen pravilne prehrane ter pomembnost pogostih preventivnih pregledov, pogovorite pa se tudi o morebitnih zdravstvenih težavah, ki bi lahko vplivale na zdravje ust. Z enostavnim pregledom vašega malčka tudi pregleda, predvsem zunanje značilnosti razvoja obraza, seveda pa pogleda tudi zobke.
 
 Zelo pomemben je odnos staršev do zobozdravnika. Otrok pred prvim obiskom nima svojega mnenja o zobozdravniku, temveč si ga oblikuje ob poslušanju in opazovanju starejših. Če starši otroka z zobozdravnikom strašijo, ali o obisku ordinacije govorijo celo kot o kazni za porednost, to zelo neugodno vpliva na otrokovo sodelovanje v ordinaciji ter le povečuje strah ob obisku zobozdravnika. Starši lahko s temeljito in pravočasno pripravo otroka pred obiskom precej pripomorete k boljšemu sodelovanju otroka ob obisku. K temu lahko pristopite tudi tako, da si v knjižnici izposodite kakšno otroško slikanico na temo obiska pri zobozdravniku, jo skupaj z malčkom preberete in se ob njej pogovorite.
