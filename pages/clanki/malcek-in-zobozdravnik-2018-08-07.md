@@ -3,7 +3,7 @@ layout: article
 language: sl
 author: Aljaž Ogrin
 title: Malček in zobozdravnik
-sub_title: Kdaj z otrokom prvič h zobozdravniku
+sub_title: 'Objavljeno v reviji Moj Malček, april 2018'
 description: |
   otrok in zobozdravnik
 date: '2018-08-07T13:55:51+02:00'
