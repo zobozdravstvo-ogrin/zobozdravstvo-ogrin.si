@@ -11,6 +11,7 @@ image: /images/uploads/scetke.png
 gallery:
   - src: /images/uploads/mih.jpg
   - src: /images/uploads/mih1.jpg
+  - src: /images/uploads/mih3.jpg
 ---
 Ste pri svojem otroku opazili belo-rumene madeže na prvih stalnih sekalcih, in to že kmalu potem ko so ti izrastli? Najverjetneje gre za molarno-incizivno hipomineralizacijo oziroma MIH, kot ji z okrajšavo imenujemo v strokovnih krogih.  Danes je tako stanje vse pogostejše, opazimo pa ga lahko že takoj pri izraščanju trajnih sekalcev in kočnikov. MIH ponavadi diagnosticira že otroški zobozdravnik, čeprav stanje pacienta spremlja celo življenje.
 
