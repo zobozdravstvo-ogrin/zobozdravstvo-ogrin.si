@@ -7,7 +7,7 @@ sub_title: 'Objavljeno v reviji Moj malček, april 2018'
 description: bele pege na zobeh
 date: '2018-08-15T23:31:32+02:00'
 published: true
-image: /images/uploads/scetke.png
+image: /images/uploads/mih3.jpg
 gallery:
   - src: /images/uploads/mih.jpg
   - src: /images/uploads/mih1.jpg
