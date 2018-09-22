@@ -21,6 +21,11 @@ class index extends Component {
       .filter(item => {
         return item.frontMatter.published;
       })
+      .sort((a, b) => {
+        const aval = new Date(a.frontMatter.date);
+        const bval = new Date(b.frontMatter.date);
+        return bval - aval;
+      })
       .map(article => {
         if (!article.frontMatter.author) {
           return null;

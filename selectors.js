@@ -9,7 +9,10 @@ const authors = data => {
 };
 
 const articles = data => {
-  return data.pages.filter(pagesData => /\/clanki\//.test(pagesData.path));
+  return data.pages
+    .filter(pagesData => {
+      return /\/clanki\//.test(pagesData.path);
+    });
 };
 
 module.exports = {
