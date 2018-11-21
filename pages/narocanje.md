@@ -17,7 +17,7 @@ Naveden delovni čas se nanaša na mladinsko zobno ordinacijo, po dogovoru pa so
 | Tor | 13.00 - 20.00 |
 | Sre | 07.00 - 13.00 |
 | Čet | 07.00 - 13.00 |
-| Pet | 7.00 - 13.00  |
+| Pet | 07.00 - 13.00 |
 
 ### Cenik
 
