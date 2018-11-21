@@ -5,9 +5,7 @@ description: 'O nas, kontakt in lokacija'
 prependJs:
   - import Iframe from 'react-iframe';
 section:
-  - keyname: whoweare
-    title: Kdo smo
-    body: >-
+  - body: >-
       ## Kdo smo
 
 
@@ -19,20 +17,14 @@ section:
 
       S prijaznim odnosom do vseh pacientov nudimo brezplačen pregled in
       svetovanje.
-  - keyname: wheretofindus
-    title: Kje nas najdete
-    body: |-
+    keyname: whoweare
+    title: Kdo smo
+  - body: |-
       ## Kje nas najdete
       Ordinacija deluje v Osnovni šoli Anton Martin Slomšek na Vrhniki.
       V bližnini se nahaja tudi prostorno parkirišče.
-  - keyname: company
-    title: Podjetje
-    body: |-
-      ## Podjetje
-
-      Naziv: OGRIN MARIJA - STOMATOLOGINJA\
-      Davčna št.: 24647764\
-      Matična št.: 1376527000
+    keyname: wheretofindus
+    title: Kje nas najdete
 image: ''
 slideshow:
   slide:
