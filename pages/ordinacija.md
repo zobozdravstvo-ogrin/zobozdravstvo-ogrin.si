@@ -11,7 +11,7 @@ section:
 
       Smo zobozdravstvena ordinacija s** koncesijo za otroško in mladinsko
       zobozdravstvo** z dolgoletnimi izkušnjami, za **odrasle paciente** pa
-      nudimo s**amoplačniške storitve.**
+      nudimo** samoplačniške storitve.**
 
       Ordinacija deluje v dveh turnusih, brez čakalnih vrst.
 
