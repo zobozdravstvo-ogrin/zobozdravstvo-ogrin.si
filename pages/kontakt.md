@@ -5,14 +5,9 @@ description: Kontakt in lokacija
 prependJs:
   - import Iframe from 'react-iframe';
 section:
-  - keyname: company
+  - body: '##'
+    keyname: company
     title: Podjetje
-    body: |-
-      ## Podjetje
-
-      Naziv: OGRIN MARIJA - STOMATOLOGINJA\
-      Davčna št.: 24647764\
-      Matična št.: 1376527000
 image: /images/uploads/ekipa.png
 ---
 {{
