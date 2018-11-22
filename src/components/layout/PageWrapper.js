@@ -25,7 +25,9 @@ class PageWrapper extends React.Component {
             <meta name="description" content={frontMatter.description} />
           )}
 
-          <meta
+          {
+            /*
+            <meta
             property="og:url"
             content={`${prefixUrlAbsolute(location.pathname)}`}
           />
@@ -39,6 +41,8 @@ class PageWrapper extends React.Component {
           {frontMatter.image && (
             <meta property="og:image" content={prefixUrl(frontMatter.image)} />
           )}
+             */
+          }
 
           <link
             rel="apple-touch-icon"

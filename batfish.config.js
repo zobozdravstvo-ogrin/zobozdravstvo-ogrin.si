@@ -1,4 +1,5 @@
 const path = require('path');
+const discardComments = require('postcss-discard-comments');
 const dataSelectors = require('./selectors');
 
 const webpackLoaders = [];
@@ -30,6 +31,14 @@ module.exports = () => {
     pagesDirectory: path.join(__dirname, './pages'),
     dataSelectors,
     stylesheets,
+    postcssPlugins: defaultPlugins => {
+      return [
+        discardComments({
+          removeAll: true
+        }),
+        ...defaultPlugins
+      ];
+    },
     applicationWrapperPath: path.join(
       __dirname,
       './src/components/layout/AppWrapper.js'

@@ -13,7 +13,10 @@ sass.render(
   {
     file: path.join(__dirname, './src/styles/style.scss'),
     importer: packageImporter(options),
-    includePaths: [path.resolve(process.cwd(), './node_modules')]
+    includePaths: [path.resolve(process.cwd(), './node_modules')],
+    outputStyle: 'compressed',
+    sourceComments: false,
+    omitSourceMapUrl: true
   },
   (error, results) => {
     if (error) {
