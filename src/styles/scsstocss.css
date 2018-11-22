@@ -804,7 +804,7 @@ ul, ol, dd {
   transform: rotate(90deg); }
 
 .grommet a:not(.grommetux-anchor):not(.grommetux-button) {
-  color: #777;
+  color: #757474;
   text-decoration: underline;
   cursor: pointer; }
   .grommet a:not(.grommetux-anchor):not(.grommetux-button).plain .grommet a:not(.grommetux-anchor):not(.grommetux-button).grommetux-button {
@@ -812,7 +812,7 @@ ul, ol, dd {
     .grommet a:not(.grommetux-anchor):not(.grommetux-button).plain .grommet a:not(.grommetux-anchor):not(.grommetux-button).grommetux-button:hover {
       text-decoration: none; }
   .grommet a:not(.grommetux-anchor):not(.grommetux-button):visited {
-    color: #777; }
+    color: #757474; }
   .grommet a:not(.grommetux-anchor):not(.grommetux-button).active {
     color: #333; }
   .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover {
@@ -825,9 +825,9 @@ ul, ol, dd {
     .grommetux-background-color-index--dark .grommet a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--dark .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover {
       color: #fff; }
   .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button), .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button) {
-    color: #777; }
+    color: #757474; }
     .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button):visited {
-      color: #777; }
+      color: #757474; }
     .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover {
       color: #000001; }
   .grommetux-background-color-index--pending .grommet a:not(.grommetux-anchor):not(.grommetux-button) {
@@ -843,9 +843,9 @@ ul, ol, dd {
     color: #fff; }
 
 .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button), .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button) {
-  color: #777; }
+  color: #757474; }
   .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):visited {
-    color: #777; }
+    color: #757474; }
   .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):hover {
     color: #000001; }
 
@@ -855,7 +855,7 @@ ul, ol, dd {
     color: transparent; }
 
 .grommetux-anchor {
-  color: #777;
+  color: #757474;
   text-decoration: underline;
   cursor: pointer; }
   .grommetux-anchor.plain .grommetux-anchor.grommetux-button {
@@ -863,7 +863,7 @@ ul, ol, dd {
     .grommetux-anchor.plain .grommetux-anchor.grommetux-button:hover {
       text-decoration: none; }
   .grommetux-anchor:visited {
-    color: #777; }
+    color: #757474; }
   .grommetux-anchor.active {
     color: #333; }
   .grommetux-anchor:hover {
@@ -876,9 +876,9 @@ ul, ol, dd {
     .grommetux-background-color-index--dark .grommetux-anchor.active, .grommetux-background-color-index--dark .grommetux-anchor:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor.active, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor:hover {
       color: #fff; }
   .grommetux-background-color-index--light .grommetux-anchor, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor {
-    color: #777; }
+    color: #757474; }
     .grommetux-background-color-index--light .grommetux-anchor:visited, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor:visited {
-      color: #777; }
+      color: #757474; }
     .grommetux-background-color-index--light .grommetux-anchor.active, .grommetux-background-color-index--light .grommetux-anchor:hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor.active, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor:hover {
       color: #000001; }
   .grommetux-background-color-index--pending .grommetux-anchor {
@@ -1045,15 +1045,15 @@ ul, ol, dd {
   .grommetux-anchor--disabled:hover.grommetux-anchor--primary {
     color: #0a64a0; }
   .grommetux-anchor--disabled:hover.grommetux-anchor:not(.grommetux-anchor--primary) {
-    color: #777; }
+    color: #757474; }
   .grommetux-background-color-index--dark .grommetux-anchor--disabled:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor--disabled:hover {
     fill: rgba(255, 255, 255, 0.7);
     stroke: rgba(255, 255, 255, 0.7); }
     .grommetux-background-color-index--dark .grommetux-anchor--disabled:hover.grommetux-anchor--primary, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor--disabled:hover.grommetux-anchor--primary {
       color: rgba(255, 255, 255, 0.7); }
   .grommetux-background-color-index--light .grommetux-anchor--disabled:hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor--disabled:hover {
-    fill: #777;
-    stroke: #777; }
+    fill: #757474;
+    stroke: #757474; }
     .grommetux-background-color-index--light .grommetux-anchor--disabled:hover.grommetux-anchor--primary, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-anchor--disabled:hover.grommetux-anchor--primary {
       color: #0a64a0; }
 
@@ -10787,11 +10787,11 @@ body {
   text-align: center; }
 
 .article-heading > a:hover {
-  color: #777 !important; }
+  color: #757474 !important; }
 
 .article-desc-container,
 .team-desc-container {
-  color: #777; }
+  color: #757474; }
 
 .article-desc-container {
   text-align: center; }
