@@ -15,7 +15,6 @@ import ArticleCard from '../src/components/common/ArticleCard';
 class index extends Component {
   render() {
     const { frontMatter } = this.props;
-    console.log(articles);
 
     const articlesEl = articles
       .filter(item => {
