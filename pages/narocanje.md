@@ -12,18 +12,18 @@ Naveden delovni čas se nanaša na mladinsko zobno ordinacijo, po dogovoru pa so
 
 ### Delovni čas:
 
-| Pon | 13.00 -19.00  |
+| Pon | 08.00 -19.00  |
 | --- | ------------- |
-| Tor | 13.00 - 20.00 |
-| Sre | 07.00 - 13.00 |
-| Čet | 07.00 - 13.00 |
-| Pet | 07.00 - 13.00 |
+| Tor | 08.00 - 20.00 |
+| Sre | 08.00 - 13.00 |
+| Čet | 08.00 - 13.00 |
+| Pet | 08.00 - 13.00 |
 
 ### Cenik
 
 Vsak pacient zahteva individualni pristop in šele z natančnim pregledom se lahko določi potrebe zdravljenja. Zato cenik vsebuje le najpogostejše posege in je informativne narave.
 
-_**Celoten cenik se nahaja v ordinaciji.**_
+**_Celoten cenik se nahaja v ordinaciji._**
 
 | Prvi pregled in svetovanje                     | brezplačno |
 | ---------------------------------------------- | ---------- |
