@@ -1,0 +1,177 @@
+@import 'variables';
+@import '~grommet/scss/grommet-core/index';
+@import 'node_modules/react-image-gallery/styles/scss/image-gallery.scss';
+
+// "overscroll fix"
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+.app-logo {
+  display: flex;
+}
+
+.app-title,
+.header-title {
+  font-size: 20px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include media-query(palm) {
+    font-size: 19px !important;
+  }
+}
+
+.app-header {
+  background-color: #fff !important;
+  box-shadow: 0.5px 0.9px 25px rgba(6, 6, 6, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.app-container {
+  margin-top: 72px;
+}
+
+.app-header {
+  @include media-query(palm) {
+    .grommetux-title {
+      display: none;
+      width: 160px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.app-footer {
+  .footer-container {
+    @include media-query(palm) {
+      align-items: center !important;
+    }
+  }
+}
+
+.secondary {
+  @include media-query(palm) {
+    align-items: center !important;
+  }
+}
+
+.body-container > div:first-child p {
+  margin-top: 0 !important;
+}
+
+.slideshow {
+  width: 100%;
+}
+
+.image-header-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.header-image-container {
+  width: 100% !important;
+}
+
+.info-header {
+  h2 {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .body-container p {
+    margin: 0 !important;
+  }
+
+  .body-container em {
+    font-weight: 600 !important;
+  }
+}
+
+.team-section {
+  background-color: #fafafa;
+}
+
+.team-image-container img {
+  border-radius: 140px;
+}
+
+.article-heading > a,
+.team-heading {
+  font-weight: 400;
+  color: #333 !important;
+}
+
+.article-heading {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.article-heading > a {
+  &:hover {
+    color: #757474 !important;
+  }
+}
+
+.article-desc-container,
+.team-desc-container {
+  color: #525252;
+}
+
+.article-desc-container {
+  text-align: center;
+}
+
+.article-card-item-wrapper {
+  background-color: #fafafa;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.content-container > div {
+  @media screen and (min-width: 720px) and (max-width: 840px) {
+    min-width: 750px;
+  }
+}
+
+// GROMMET
+.grommet
+  button.image-gallery-bullet:not(.grommetux-button):not(.grommetux-button--box) {
+  // min-width: initial;
+  // padding: 6px 6px;
+  // border: 1px #fefefe solid;
+  // border-radius: 10px;
+  // box-shadow: 0 0 0 transparent;
+  display: none;
+}
+
+.grommet
+  button.image-gallery-icon:not(.grommetux-button):not(.grommetux-button--box) {
+  margin: 20px;
+  line-height: inherit !important;
+  min-width: initial;
+  padding: 13px 15px;
+  border: 1px #fefefe solid;
+  border-radius: 100%;
+  box-shadow: 0 0 0 transparent;
+  width: 55px;
+  height: 55px;
+
+  svg {
+    width: 15px;
+    height: 30px;
+  }
+  &::before {
+    text-shadow: 0 1px 1px #999999;
+  }
+}
