@@ -2,14 +2,11 @@ import path from 'path';
 import fs from 'fs-jetpack';
 import matter from 'gray-matter';
 const jsxM = require('@mapbox/jsxtreme-markdown');
-const presets = require('remark-preset-davidtheclark');
 
 export const stringToHtml = async (content?: string, nlToBr = false) => {
   let bodyHtml = content || '';
   if (content) {
-    bodyHtml = jsxM.toJsx(content, {
-      remarkPlugins: presets.plugins,
-    });
+    bodyHtml = jsxM.toJsx(content);
   }
 
   if (nlToBr) {

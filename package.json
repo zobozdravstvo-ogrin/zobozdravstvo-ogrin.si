@@ -40,7 +40,6 @@
     "fs-jetpack": "^4.3.0",
     "gray-matter": "^4.0.3",
     "prettier": "^2.5.1",
-    "remark-preset-davidtheclark": "0.8.1",
     "sass": "1.32.13",
     "typescript": "^4.5.3"
   }
