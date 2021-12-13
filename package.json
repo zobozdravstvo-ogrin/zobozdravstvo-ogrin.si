@@ -17,7 +17,6 @@
     "deploy": "git pull origin master && rsync -av --delete --ignore-errors --exclude 'node_modules' ../zobozdravstvo-ogrin.si/ admin@178.62.234.100:/srv/www/zobozdravstvo-ogrin.si && ssh admin@178.62.234.100 'cd /srv/www/zobozdravstvo-ogrin.si; docker-compose up -d --build'"
   },
   "dependencies": {
-    "@mapbox/jsxtreme-markdown": "^2.0.0",
     "classnames": "^2.3.1",
     "date-fns": "^2.27.0",
     "grommet": "^1.10.1",
@@ -28,10 +27,10 @@
     "react-image-gallery": "^1.2.7",
     "react-image-lightbox": "^5.1.4",
     "react-measure": "^2.5.2",
-    "react-photo-gallery": "^8.0.0",
-    "remark-preset-davidtheclark": "^0.8.1"
+    "react-photo-gallery": "^8.0.0"
   },
   "devDependencies": {
+    "@mapbox/jsxtreme-markdown": "^2.0.0",
     "@moxy/next-pre-compression": "^3.0.1",
     "@types/node": "^16.11.12",
     "@types/react": "17.0.37",
@@ -41,6 +40,7 @@
     "fs-jetpack": "^4.3.0",
     "gray-matter": "^4.0.3",
     "prettier": "^2.5.1",
+    "remark-preset-davidtheclark": "0.8.1",
     "sass": "1.32.13",
     "typescript": "^4.5.3"
   }
