@@ -50,7 +50,6 @@ module.exports = withPWA(
       dest: 'public',
     },
     compress: isProd,
-    assetPrefix: isProd ? '/zobozdravstvo-ogrin.si/' : '',
     async headers() {
       return [
         {

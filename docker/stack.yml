@@ -1,0 +1,34 @@
+version: '3.3'
+services:
+  zobozdravstvo-ogrin-si:
+    image: registry.susa.cloud/zobozdravstvo-ogrin.si:v1.0.0
+    user: node
+    ports:
+     - 3031:3000
+    networks:
+     - net
+     - traefik-public
+    deploy:
+      labels:
+        traefik.http.routers.zobozdravstvo-ogrin-si-https.tls: 'true'
+        traefik.http.routers.zobozdravstvo-ogrin-si-https.entrypoints: https
+        traefik.http.services.zobozdravstvo-ogrin-si.loadbalancer.server.port: '3000'
+        traefik.http.routers.zobozdravstvo-ogrin-si-https.tls.certresolver: le
+        traefik.http.routers.zobozdravstvo-ogrin-si-https.rule: Host(`zobozdravstvo-ogrin.si`)
+        traefik.http.routers.zobozdravstvo-ogrin-si-http.rule: Host(`zobozdravstvo-ogrin.si`)
+        traefik.constraint-label: traefik-public
+        traefik.http.routers.zobozdravstvo-ogrin-si-http.entrypoints: http
+        traefik.docker.network: traefik-public
+        traefik.enable: 'true'
+        traefik.http.routers.zobozdravstvo-ogrin-si-http.middlewares: https-redirect
+      update_config:
+        delay: 10s
+        failure_action: rollback
+      restart_policy:
+        window: 120s
+        max_attempts: 3
+networks:
+  net:
+    driver: overlay
+  traefik-public:
+    external: true

@@ -1,19 +1,28 @@
-FROM keymetrics/pm2:14-alpine
+FROM node:16.13.1-alpine3.13 AS node
+RUN mkdir /app && chown -R node:node /app
 
+FROM node as deps
 WORKDIR /app
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile
 
-COPY . /app
+FROM node AS builder
+WORKDIR /app
+COPY . .
+COPY --from=deps /app/node_modules ./node_modules
+RUN yarn build
 
-RUN apk --update add git
-
-ENV NPM_CONFIG_LOGLEVEL warn
-RUN npm install
-RUN npm run build
-
-RUN pm2 install vmarchaud/pm2-githook
-RUN pm2 set pm2-githook:port 3031
-
-EXPOSE 3030
-EXPOSE 3031
-
-CMD ["pm2-runtime", "start", "yarn --name \"zobozdravstvo\" --interpreter bash -- start"]
+FROM node as release
+WORKDIR /app
+COPY --from=builder /app/.env ./
+COPY --from=builder /app/.env.production ./
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/package.json ./package.json
+COPY --from=deps /app/node_modules ./node_modules
+RUN npx next telemetry disable
+USER node
+EXPOSE 3000
+ENV NODE_ENV=production
+CMD ["node_modules/next/dist/bin/next", "start"]

@@ -1,11 +1,10 @@
 version: '3'
 
 services:
-  zobozdravstvo-ogrin.si:
-    image: zobozdravstvo-ogrin.si
+  zobozdravstvo-ogrin-si:
+    image: susa/zobozdravstvo-ogrin.si:0.0.1
     restart: always
     build:
       context: ./
     ports:
       - "3030:3000"
-      - "3031:3031"
