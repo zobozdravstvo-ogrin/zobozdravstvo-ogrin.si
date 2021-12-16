@@ -17,7 +17,7 @@ PACKAGE_VERSION=$(cat package.json \
 
 echo $PACKAGE_VERSION
 
-SERVER_IMAGE_TAG="${REGISTRY}/zobozdravstvo-ogrin.si:v${PACKAGE_VERSION}"
+SERVER_IMAGE_TAG="${REGISTRY}/zobozdravstvo-ogrin-si:v${PACKAGE_VERSION}"
 echo $SERVER_IMAGE_TAG
 
 docker push $SERVER_IMAGE_TAG
